@@ -6,6 +6,11 @@ on early-init
     write /dev/stune/schedtune.boost 50
     write /dev/stune/schedtune.prefer_idle 1
 
+on boot
+    # Enable idle state listener
+    write /sys/class/drm/card0/device/idle_encoder_mask 1
+    write /sys/class/drm/card0/device/idle_timeout_ms 100
+
 on property:persist.sys.device_provisioned=1
     # Use foreground cpuset for dex2oat
     setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,6,7
