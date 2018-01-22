@@ -188,5 +188,8 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 # Treble flag
 BOARD_VNDK_VERSION := current
 
+# WiFi
+CONFIG_ACS := true
+
 # Inherit from the proprietary version
 include vendor/xiaomi/juice/BoardConfigVendor.mk
