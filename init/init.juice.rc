@@ -28,6 +28,7 @@ on late-fs
     start boot_dmesg
 
 on early-boot
+
     # SSR Setup
     write /sys/bus/msm_subsys/devices/subsys0/restart_level RELATED
     write /sys/bus/msm_subsys/devices/subsys1/restart_level RELATED
