@@ -54,3 +54,7 @@ on property:vendor.post_boot.parsed=1
     # IRQ 209: kgsl_3d0
     write /proc/irq/218/smp_affinity_list 2
     write /proc/irq/209/smp_affinity_list 1
+
+on property:persist.sys.device_provisioned=1
+    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6
+    setprop dalvik.vm.dex2oat-threads 6
