@@ -495,4 +495,5 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 # Zygote
 PRODUCT_SYSTEM_PROPERTIES += \
-    zygote.critical_window.minute=10
+    zygote.critical_window.minute=10 \
+    persist.device_config.runtime_native.usap_pool_enabled=true
