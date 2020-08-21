@@ -316,6 +316,7 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     JuiceFrameworksOverlay \
     JuiceSystemUIOverlay \
+    JuiceTetheringOverlay \
     WifiResTarget
 
 # Perf
@@ -455,7 +456,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Thermal
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.sys.thermal.data.path=/data/vendor/thermal/
-    
+
 # Time-services
 PRODUCT_VENDOR_PROPERTIES += \
     persist.timed.enable=true
