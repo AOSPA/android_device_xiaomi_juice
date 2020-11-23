@@ -131,6 +131,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 
+# Cutout
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.support_hide_display_cutout=true
+
 # Crypto
 PRODUCT_PROPERTY_OVERRIDES += \
    ro.crypto.allow_encrypt_override=true \
@@ -292,6 +296,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPAJuiceFrameworksOverlay \
+    AvoidAppsInCutoutOverlay \
     CitrusSettingsProviderOverlay \
     CitrusWifiOverlay \
     JuiceCarrierConfigOverlay \
