@@ -263,6 +263,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/input/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/configs/input/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
 
+# LMKD
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.config.low_ram=false \
+    ro.lmk.log_stats=true
+
 # Media
 PRODUCT_VENDOR_PROPERTIES += \
     media.settings.xml=/vendor/etc/media_profiles_vendor.xml \
