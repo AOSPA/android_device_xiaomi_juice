@@ -65,6 +65,9 @@ on property:vendor.post_boot.parsed=1
     write /sys/module/cpu_boost/parameters/powerkey_input_boost_freq "0:1804800 1:0 2:0 3:0 4:2016000 5:0 6:0 7:0"
     write /sys/module/cpu_boost/parameters/powerkey_input_boost_ms 750
 
+    # Disable native stats collection service
+    stop statsd
+
     # Configure scheduler
     write /proc/sys/kernel/sched_child_runs_first 1
     write /proc/sys/kernel/sched_tunable_scaling 1
