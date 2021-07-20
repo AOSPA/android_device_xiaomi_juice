@@ -173,7 +173,8 @@ PRODUCT_PACKAGES += \
     disable_configstore
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.enable_gl_backpressure=1 \
+    debug.sf.enable_gl_backpressure=1 \    
+    debug.sf.layer_caching_active_layer_timeout_ms=1000 \
     vendor.display.enable_async_powermode=0 \
     debug.renderengine.backend=skiaglthreaded \
     ro.hwui.render_ahead=20
