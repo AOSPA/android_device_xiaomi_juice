@@ -43,7 +43,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.button_jack.switch=0
 
 PRODUCT_ODM_PROPERTIES += \
-    vendor.audio.hw.aac.encoder=false
+    vendor.audio.hw.aac.encoder=false \
+    vendor.audio.offload.buffer.size.kb=256
 
 PRODUCT_ODM_PROPERTIES += \
     aaudio.mmap_policy=1 \
