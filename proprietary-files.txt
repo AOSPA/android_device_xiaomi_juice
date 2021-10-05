@@ -895,7 +895,6 @@ vendor/firmware/scuba_ipa_fws.elf
 vendor/firmware/scuba_ipa_fws.mdt
 
 # Listen
-vendor/lib/hw/sound_trigger.primary.bengal.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
