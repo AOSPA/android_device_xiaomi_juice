@@ -488,8 +488,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     config.disable_rtt=true
-    
+
 # WLAN
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/wlan/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
+
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.data.iwlan.enable=true \
     ro.hardware.wlan.dbs=2 \
