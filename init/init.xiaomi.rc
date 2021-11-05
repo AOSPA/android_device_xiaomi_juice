@@ -28,6 +28,11 @@
 #
 #
 
+on init
+    # Set xiaomi touch permissions
+    chown system system /sys/touchpanel/double_tap
+    chmod 0660 /sys/touchpanel/double_tap
+
 on post-fs-data
     # LIRC/IR
     chown system system /dev/lirc0
