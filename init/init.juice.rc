@@ -40,9 +40,9 @@ on early-boot
     write /sys/bus/msm_subsys/devices/subsys7/restart_level RELATED
 
 on init
-    # DT2W
+    # Set xiaomi touch permissions
     chown system system /sys/touchpanel/double_tap
-    chmod 0644 /sys/touchpanel/double_tap
+    chmod 0660 /sys/touchpanel/double_tap
 
     # Bind mount fastrpc_shell_3 for labelling
     mkdir /mnt/vendor/dsp 0770 root root
