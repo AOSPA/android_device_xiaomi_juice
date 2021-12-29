@@ -581,7 +581,6 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/bin/qdcmss
 vendor/etc/display/advanced_sf_offsets.xml
 vendor/etc/init/qdcmss.rc
-vendor/etc/SVIConfig.xml
 
 # Display Calib Data
 vendor/etc/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.xml
@@ -1415,7 +1414,10 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
-# Thermal engine
+# Snapdragon Vision - MIUI
+vendor/etc/SVIConfig.xml
+
+# Thermal - MIUI
 vendor/bin/mi_thermald
 vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
