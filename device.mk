@@ -434,6 +434,13 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.sys.binary_xml=false
 
+# Snapdragon Vision
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.display.svi=1 \
+    ro.vendor.display.sensortype=2 \
+    vendor.display.svi.config=1 \
+    vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
+
 # Subsystem silent restart
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.ssr.restart_level=ALL_ENABLE
