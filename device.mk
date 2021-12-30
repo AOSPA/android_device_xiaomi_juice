@@ -193,6 +193,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    AOSPAJuiceFrameworks \
     JuiceFrameworks \
     JuiceSystemUI \
     JuiceTetheringOverlay \
