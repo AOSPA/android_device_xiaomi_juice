@@ -35,4 +35,7 @@
     <!-- Whether to show WiFi/Hotspot standard -->
     <bool name="config_show_network_standard">true</bool>
 
+    <!-- Pocket Lock -->
+    <bool name="config_pocketModeSupported">false</bool>
+
 </resources>
