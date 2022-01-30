@@ -204,6 +204,11 @@ PRODUCT_SYSTEM_PROPERTIES += \
 # Health
 TARGET_USE_HIDL_QTI_HEALTH := true
 
+# HWUI
+PRODUCT_VENDOR_PROPERTIES += \
+    debug.hwui.use_hint_manager=true \
+    debug.hwui.target_cpu_time_percent=30
+
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
