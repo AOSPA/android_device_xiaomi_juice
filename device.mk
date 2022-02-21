@@ -218,7 +218,8 @@ TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 # LMK
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.lmk.filecache_min_kb=153600  \
-    ro.lmk.kill_timeout_ms=50
+    ro.lmk.kill_timeout_ms=50 \
+    ro.lmk.stall_limit_critical=40
 
 # GSI
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
