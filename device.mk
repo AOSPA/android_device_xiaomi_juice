@@ -244,7 +244,8 @@ PRODUCT_COPY_FILES += \
 # LMK
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.lmk.filecache_min_kb=153600 \
-    ro.lmk.kill_timeout_ms=50
+    ro.lmk.kill_timeout_ms=50 \
+    ro.lmk.stall_limit_critical=40
     
 # Media
 PRODUCT_VENDOR_PROPERTIES += \
