@@ -91,6 +91,7 @@ persist.vendor.radio.force_on_dc=true
 persist.vendor.radio.manual_nw_rej_ct=1
 persist.vendor.radio.mt_sms_ack=30
 persist.vendor.radio.process_sups_ind=1
+persist.vendor.radio.redir_party_num=0
 persist.vendor.radio.report_codec=1
 persist.vendor.radio.snapshot_enabled=1
 persist.vendor.radio.snapshot_timer=5
@@ -128,4 +129,8 @@ ro.hardware.wlan.chip=wcn3988
 ro.hardware.wlan.dbs=0
 ro.hardware.wlan.mimo=0
 ro.hardware.wlan.vendor=qcom
+<<<<<<< PATCH SET (4dd1da juice: props: Disable radio redir_party_num feature)
 ro.telephony.iwlan_operation_mode=legacy
+=======
+ro.telephony.iwlan_operation_mode=legacy
+>>>>>>> BASE      (695b68 juice: init: Disable native stats collection service)
