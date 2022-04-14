@@ -142,7 +142,8 @@ PRODUCT_COPY_FILES += \
 
 # Charger
 PRODUCT_PACKAGES += \
-    libsuspend
+    libsuspend \
+    charger_res_images
 
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.vendor.quick.charge=1 \
