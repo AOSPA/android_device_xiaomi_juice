@@ -173,7 +173,8 @@ PRODUCT_PACKAGES += \
     disable_configstore
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.display.enable_async_powermode=0
+    vendor.display.enable_async_powermode=0 \
+    debug.renderengine.backend=skiaglthreaded
 
 # DPM
 PRODUCT_VENDOR_PROPERTIES += \
