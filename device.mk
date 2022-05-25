@@ -362,6 +362,7 @@ PRODUCT_PACKAGES += \
     init.qti.early_init.sh
 
 PRODUCT_PACKAGES += \
+    fstab.zram \
     init.target.rc \
     init.juice.perf.rc \
     init.xiaomi.rc \
