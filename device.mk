@@ -173,6 +173,7 @@ PRODUCT_PACKAGES += \
     disable_configstore
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.enable_gl_backpressure=1 \
     vendor.display.enable_async_powermode=0 \
     debug.renderengine.backend=skiaglthreaded \
     ro.hwui.render_ahead=20
