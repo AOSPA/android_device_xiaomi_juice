@@ -97,10 +97,8 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_juice
 
 # Kernel
 BOARD_KERNEL_CMDLINE := \
-    console=ttyMSM0,115200n8 \
     earlycon=msm_geni_serial,0x4a90000 \
     androidboot.hardware=qcom \
-    androidboot.console=ttyMSM0 \
     androidboot.memcg=1 \
     lpm_levels.sleep_disabled=1 \
     msm_rtb.filter=0x237 \
