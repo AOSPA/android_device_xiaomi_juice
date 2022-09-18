@@ -72,6 +72,9 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_SEPARATED_DTBO := false
 
 # HIDL
+ODM_MANIFEST_SKUS += lemon
+ODM_MANIFEST_LEMON_FILES := $(DEVICE_PATH)/configs/vintf/manifest_nfc.xml
+
 DEVICE_MATRIX_FILE := \
     $(COMMON_PATH)/compatibility_matrix.xml
 
