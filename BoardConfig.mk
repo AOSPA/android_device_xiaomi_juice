@@ -31,6 +31,9 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a9
 
+# Audio
+TARGET_PROVIDES_AUDIO_EXTNS := true
+
 # AVB
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
@@ -72,6 +75,16 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 # DTBO
 BOARD_KERNEL_SEPARATED_DTBO := false
 
+# Display
+TARGET_USES_COLOR_METADATA := true
+TARGET_USES_DISPLAY_RENDER_INTENTS := true
+TARGET_USES_DRM_PP := true
+TARGET_USES_GRALLOC1 := true
+TARGET_USES_GRALLOC4 := true
+TARGET_USES_HWC2 := true
+TARGET_USES_ION := true
+TARGET_USES_NEW_ION_API := true
+
 # HIDL
 DEVICE_MATRIX_FILE := \
     $(COMMON_PATH)/compatibility_matrix.xml
@@ -108,6 +121,9 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_RAMDISK_OFFSET := 0x01000000
 
 KERNEL_DEFCONFIG := vendor/$(TARGET_BOARD_PLATFORM)-perf_defconfig
+
+# Media
+TARGET_DISABLED_UBWC := true
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := lime,citrus,lemon,pomelo,juice
@@ -165,3 +181,6 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Treble flag
 BOARD_VNDK_VERSION := current
+
+# Inherit from the proprietary version
+include vendor/xiaomi/juice/BoardConfigVendor.mk
