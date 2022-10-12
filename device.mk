@@ -297,7 +297,8 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_ODM_PROPERTIES += \
-    media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+    media.settings.xml=/vendor/etc/media_profiles_vendor.xml \
+    vendor.mm.enable.qcom_parser=16777215
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     media.aac_51_output_enabled=true \
