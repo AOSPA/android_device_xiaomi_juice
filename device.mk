@@ -38,6 +38,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.audio.button_jack.profile=volume \
+    persist.vendor.audio.button_jack.switch=0
+
 PRODUCT_ODM_PROPERTIES += \
     aaudio.mmap_policy=1 \
     ro.vendor.audio.sdk.fluencetype=fluence
@@ -304,10 +308,9 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 
 # Netflix
 PRODUCT_SYSTEM_PROPERTIES += \
-    ro.netflix.channel=004ee050-1a17-11e9-bb61-6f1da27fb55b
-
-PRODUCT_VENDOR_PROPERTIES += \
-    vendor.netflix.bsp_rev=Q6115-31409-1
+    ro.netflix.channel=497730f0-ad4b-11e7-95a4-c7ad113ce187 \
+    ro.netflix.signup=1 \
+    ro.netflix.bsp_rev=Q6115-31409-1
 
 # Netmgr
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
@@ -444,16 +447,17 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml
 
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.sensors.debug.ssc_qmi_debug=true \
-    persist.vendor.sensors.enable.bypass_worker=true \
-    persist.vendor.sensors.enable.rt_task=false \
+PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.sensors.hal_trigger_ssr=false \
-    persist.vendor.sensors.support_direct_channel=false
+    persist.vendor.sensors.odl.adsp=true \
+    persist.vendor.sensors.enable.rt_task=false \
+    persist.vendor.sensors.support_direct_channel=false \
+    persist.vendor.sensors.enable.bypass_worker=true
 
 # SoC
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.soc.manufacturer=QTI
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.soc.manufacturer=Qualcomm \
+    ro.soc.model=SM6115
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -514,7 +518,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.data.iwlan.enable=true \
-    ro.hardware.wlan.dbs=2 \
+    ro.hardware.wlan.dbs=0 \
     ro.telephony.iwlan_operation_mode=legacy
 
 # Zygote
