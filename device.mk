@@ -348,6 +348,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    AOSPAJuiceFrameworksOverlay \
     FrameworksResTarget \
     JuiceFrameworksOverlay \
     JuiceSystemUIOverlay \
