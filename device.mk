@@ -43,6 +43,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.button_jack.switch=0
 
 PRODUCT_ODM_PROPERTIES += \
+    vendor.audio.hw.aac.encoder=false
+
+PRODUCT_ODM_PROPERTIES += \
     aaudio.mmap_policy=1 \
     ro.vendor.audio.sdk.fluencetype=fluence
 
