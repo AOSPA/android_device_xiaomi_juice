@@ -385,6 +385,9 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.qcomsysd.enabled=1
 
 # Radio
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.telephony.block_binder_thread_on_incoming_calls=false
+
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.fetchqos=true
 
