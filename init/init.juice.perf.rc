@@ -69,7 +69,7 @@ on property:vendor.post_boot.parsed=1
 
     # Configure CPU input boost
     write /sys/module/cpu_boost/parameters/input_boost_freq "0:1401600"
-    write /sys/module/cpu_boost/parameters/input_boost_ms 120
+    write /sys/module/cpu_boost/parameters/input_boost_ms 250
     write /sys/module/cpu_boost/parameters/powerkey_input_boost_freq "0:1804800 1:0 2:0 3:0 4:2016000 5:0 6:0 7:0"
     write /sys/module/cpu_boost/parameters/powerkey_input_boost_ms 750
 
