@@ -359,6 +359,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.target.rc \
+    init.juice.perf.rc \
     init.xiaomi.rc \
     ueventd.juice.rc
 
