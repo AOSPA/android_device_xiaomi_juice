@@ -48,6 +48,8 @@ property Name is called. -->
                 <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="60" />
                 <Prop Name="ro.vendor.at_library" Value="libqti-at.so" />
                 <Prop Name="vendor.perf.bgt.enable" Value="true" />
+                <Prop Name="vendor.perf.performancemode.support" Value="true" Target="khaje" />
+                <Prop Name="vendor.perf.performancemode.support" Value="true" Target="bengal" />
 
                 <!--Mention all the target/kernel specific properties at the end of xml file
                     All the default valuea are kept above-->
