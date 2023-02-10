@@ -82,9 +82,6 @@ TARGET_PROVIDES_LIBLIGHT := true
 ODM_MANIFEST_SKUS += lemon
 ODM_MANIFEST_LEMON_FILES := $(DEVICE_PATH)/configs/vintf/manifest_nfc.xml
 
-DEVICE_MATRIX_FILE := \
-    $(COMMON_PATH)/compatibility_matrix.xml
-
 DEVICE_MANIFEST_FILE += \
     $(DEVICE_PATH)/configs/vintf/manifest.xml
 
