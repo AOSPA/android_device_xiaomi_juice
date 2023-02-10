@@ -80,9 +80,6 @@ TARGET_SCREEN_DENSITY := 420
 TARGET_PROVIDES_LIBLIGHT := true
 
 # HIDL
-DEVICE_MATRIX_FILE := \
-    $(COMMON_PATH)/compatibility_matrix.xml
-
 DEVICE_MANIFEST_FILE += \
     $(DEVICE_PATH)/configs/vintf/manifest.xml
 
