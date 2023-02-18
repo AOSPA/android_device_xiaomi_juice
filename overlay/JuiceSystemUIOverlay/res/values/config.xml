@@ -32,4 +32,7 @@
     <!-- Height of the status bar header bar when on Keyguard (match status_bar_height) -->
     <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height</dimen>
 
+    <!-- Ripple animation played at the time of screen unlock-->
+    <bool name="config_enableUnlockRippleAnimation">false</bool>
+
 </resources>
