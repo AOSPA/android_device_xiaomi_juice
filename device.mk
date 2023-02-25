@@ -241,16 +241,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/input/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/configs/input/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
 
-# LMK
-PRODUCT_SYSTEM_PROPERTIES += \
-    ro.lmk.kill_timeout_ms=100 \
-    ro.lmk.use_minfree_levels=true \
-    ro.lmk.psi_complete_stall_ms=70 \
-    ro.lmk.swap_free_low_percentage=20 \
-    ro.lmk.swap_util_max=90 \
-    ro.lmk.thrashing_limit=30 \
-    ro.lmk.thrashing_limit_decay=50
-
 # Media
 PRODUCT_VENDOR_PROPERTIES += \
     media.settings.xml=/vendor/etc/media_profiles_vendor.xml \
