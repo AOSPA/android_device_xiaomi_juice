@@ -253,6 +253,9 @@ PRODUCT_VENDOR_PROPERTIES += \
     media.settings.xml=/vendor/etc/media_profiles_vendor.xml \
     vendor.mm.enable.qcom_parser=16777215
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml
+
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     media.aac_51_output_enabled=true \
     media.stagefright.enable-aac=true \
