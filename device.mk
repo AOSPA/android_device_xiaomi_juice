@@ -358,6 +358,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     media \
     overlay \
     perf \
+    qseecomd \
     telephony \
     usb \
     vibrator \
