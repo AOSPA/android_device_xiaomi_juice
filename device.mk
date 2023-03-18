@@ -248,7 +248,7 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
 # Media
-PRODUCT_ODM_PROPERTIES += \
+PRODUCT_VENDOR_PROPERTIES += \
     media.settings.xml=/vendor/etc/media_profiles_vendor.xml \
     vendor.mm.enable.qcom_parser=16777215
 
@@ -350,7 +350,7 @@ TARGET_COMMON_QTI_COMPONENTS := \
     display \
     gps \
     init \
-    media-legacy \
+    media \
     overlay \
     perf \
     telephony \
