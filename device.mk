@@ -174,7 +174,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.enable_async_powermode=0 \
-    debug.renderengine.backend=skiaglthreaded
+    debug.renderengine.backend=skiaglthreaded \
+    ro.hwui.render_ahead=20
 
 # DPM
 PRODUCT_VENDOR_PROPERTIES += \
