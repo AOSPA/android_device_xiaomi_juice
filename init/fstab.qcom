@@ -37,6 +37,7 @@
 #<src>                                                 <mnt_point>            <type>  <mnt_flags and options>                            <fs_mgr_flags>
 system                                                  /system                  ext4    ro,barrier=1,discard                                 wait,logical,first_stage_mount,avb=vbmeta_system,avb_keys=/avb/q-developer-gsi.avbpubkey:/avb/r-developer-gsi.avbpubkey:/avb/s-developer-gsi.avbpubkey
 system_ext                                              /system_ext              ext4    ro,barrier=1,discard                                 wait,logical,first_stage_mount,avb=vbmeta_system
+odm                                                     /odm                     ext4    ro,barrier=1,discard                                 wait,logical,first_stage_mount,readahead_size_kb=128
 product                                                 /product                 ext4    ro,barrier=1,discard                                 wait,logical,first_stage_mount,avb=vbmeta_system
 vendor                                                  /vendor                  ext4    ro,barrier=1,discard                                 wait,logical,first_stage_mount,avb
 /dev/block/bootdevice/by-name/cache                     /cache                   ext4    nosuid,noatime,nodev,barrier=1                       wait
