@@ -28,7 +28,7 @@
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 # Changes from Qualcomm Innovation Center are provided under the following license:
-# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+# Copyright (c) 2022-2023 Qualcomm Innovation Center, Inc. All rights reserved.
 # SPDX-License-Identifier: BSD-3-Clause-Clear
 
 soc_id=`cat /sys/devices/soc0/soc_id` 2> /dev/null
@@ -58,4 +58,5 @@ elif [ "$soc_id" -eq 498 ]; then
     setprop ro.vendor.qti.soc_model QCS6490
 elif [ "$soc_id" -eq 585 ]; then
     setprop ro.vendor.qti.soc_model SG4150P
+    setprop vendor.audio.feature.dmabuf.cma.memory.enable true
 fi
