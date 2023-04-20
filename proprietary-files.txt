@@ -934,6 +934,9 @@ vendor/lib64/nfc_nci.st21nfc.st.so
 vendor/firmware/st21nfc_fw.bin
 vendor/firmware/st21nfc_fw7.bin
 
+# Power-off charging daemon
+system/bin/charger:system/bin/chargeonlymode
+
 # Perf
 vendor/etc/lm/prekill/prekill_2GB.data
 vendor/etc/lm/prekill/prekill_4GB.data
