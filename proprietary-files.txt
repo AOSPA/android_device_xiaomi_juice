@@ -755,9 +755,6 @@ vendor/lib64/vendor.qti.gnss@4.0-service.so|6d006555dce2da619f394b42e24104d76f79
 vendor/lib64/vendor.qti.gnss@4.0.so|8ae256c3a5f69914a5aab20e4cbaba3be54c7f15
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|8f1bd782c728fc275b8e78785a4866414d8c1cd8
 
-# Google
-vendor/etc/permissions/com.google.android.feature.PREMIER_TIER.xml
-
 # Graphics Adreno
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so
@@ -994,6 +991,14 @@ vendor/lib64/nfc_nci.st21nfc.st.so
 # NFC Firmware
 vendor/firmware/st21nfc_fw.bin
 vendor/firmware/st21nfc_fw7.bin
+
+# Neural networks
+vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
+vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
+-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
+vendor/lib64/unnhal-acc-adreno.so
+vendor/lib64/unnhal-acc-common.so
+vendor/lib64/unnhal-acc-hvx.so
 
 # Perf
 vendor/etc/lm/prekill/prekill_2GB.data
