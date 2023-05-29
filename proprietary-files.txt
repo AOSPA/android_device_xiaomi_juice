@@ -496,6 +496,12 @@ vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.bengal.so
 vendor/lib64/libcdfw.so|76aa65aea92ef92e0c4e4a6700c049d5de549c18
 vendor/lib64/libcdfw_remote_api.so|e43217af385097ea8d939a7c0cc60c3e092ad086
 
+# Charger
+vendor/bin/hvdcp_opti
+vendor/bin/init.qti.chg_policy.sh
+vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
+vendor/etc/charger_fstab.qti
+
 # CNE
 -vendor/app/CneApp/CneApp.apk
 vendor/bin/cnd
