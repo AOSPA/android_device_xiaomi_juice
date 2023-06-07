@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "99aca677_c47ff710",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000488
+      },
+      "writtenOn": "2023-06-07T12:00:41Z",
+      "side": 1,
+      "message": "nah, go the carrierconfig way",
+      "revId": "b6b80ab1e4b78725212430023aa6f78d4a4341fd",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
