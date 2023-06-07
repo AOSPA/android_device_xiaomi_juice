@@ -16,6 +16,23 @@
       "message": "if this is significant, couldnt this be enabled for all devices in vendor/aospa?",
       "revId": "7a26279b7637c5315a12a370bc94337bc4d7cac3",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1161bfc8_8de96633",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2023-06-07T03:00:28Z",
+      "side": 1,
+      "message": "this is already false in framework.",
+      "revId": "7a26279b7637c5315a12a370bc94337bc4d7cac3",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
