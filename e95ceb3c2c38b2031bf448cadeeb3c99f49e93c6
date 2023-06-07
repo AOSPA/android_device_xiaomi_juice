@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "51f9dec8_7cbac40e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000551
+      },
+      "writtenOn": "2023-06-07T05:48:13Z",
+      "side": 1,
+      "message": "Do you have flickering otherwise",
+      "revId": "e95ceb3c2c38b2031bf448cadeeb3c99f49e93c6",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
