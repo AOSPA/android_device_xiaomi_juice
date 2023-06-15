@@ -294,6 +294,7 @@ PRODUCT_PACKAGES += \
     AOSPAJuiceFrameworksOverlay \
     JuiceCarrierConfigOverlay \
     JuiceFrameworksOverlay \
+    JuiceNfcOverlay \
     JuiceSystemUIOverlay \
     JuiceTetheringOverlay \
     JuiceWifiOverlay
