@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "87f58f49_d301791d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000012
+      },
+      "writtenOn": "2023-06-18T08:16:44Z",
+      "side": 1,
+      "message": "There\u0027s really no point of using generic CPU variant.  Just set TARGET_CPU_VARIANT to what you want it to be.",
+      "revId": "6d4dfdf62c0b2cde7d3d4c51bcf60df0199d4737",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
