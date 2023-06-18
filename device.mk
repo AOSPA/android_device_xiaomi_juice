@@ -378,11 +378,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.fetchqos=true
 
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.wfc_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1
-
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.data.iwlan.enable=true \
     persist.vendor.radio.add_power_save=1 \
