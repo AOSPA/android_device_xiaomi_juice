@@ -365,6 +365,7 @@ PRODUCT_COPY_FILES += \
 TARGET_BOARD_PLATFORM := bengal
 
 TARGET_COMMON_QTI_COMPONENTS := \
+    alarm \
     audio \
     av \
     bt \
