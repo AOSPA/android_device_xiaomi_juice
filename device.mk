@@ -147,6 +147,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
+PRODUCT_VENDOR_PROPERTIES += \
+    vendor.display.disable_layer_stitch=1 \
+    vendor.display.enable_rounded_corner=0
+
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_gl_backpressure=1 \
     debug.sf.disable_client_composition_cache=1 \
