@@ -13,44 +13,6 @@
 # limitations under the License.
 
 on post-fs-data
-    # LIRC/IR
-    chown system system /dev/lirc0
-    chmod 0666 /dev/lirc0
-
-    # Thermal and charge_logger
-    mkdir /data/vendor/thermal 0771 root system
-    mkdir /data/vendor/thermal/config 0771 root system
-    mkdir /data/vendor/mac_addr 0771 system system
-    mkdir /data/vendor/charge_logger 0771 system system
-    chmod 0777 /vendor/bin/scancode_bin
-
-on early-init
-    mount debugfs debugfs /sys/kernel/debug
-    chmod 0755 /sys/kernel/debug
-
-on charger
-    start mi_thermald
-
-service mi_thermald /system/vendor/bin/mi_thermald
-    class main
-    user root
-    group system
-
-service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
-    override
-    class hal
-    user audioserver
-    # media gid needed for /dev/fm (radio) and for /data/misc/media (tee)
-    group audio camera drmrpc inet media mediadrm net_bt net_bt_admin net_bw_acct oem_2901 wakelock
-    capabilities BLOCK_SUSPEND SYS_NICE
-    # setting RLIMIT_RTPRIO allows binder RT priority inheritance
-    rlimit rtprio 10 10
-    ioprio rt 4
-    task_profiles ProcessCapacityHigh HighPerformance
-    socket audio_hw_socket seqpacket 0666 system system
-    onrestart restart audioserver
-
-on post-fs-data
     mkdir /data/vendor/nfc 0770 nfc nfc
 	
 service stflashtool /vendor/bin/STFlashTool
@@ -73,3 +35,17 @@ on post-fs && property:ro.boot.product.hardware.sku=lemon
 
 on boot && property:ro.boot.product.hardware.sku=lemon
     start nfc_hal_service
+
+service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
+    override
+    class hal
+    user audioserver
+    # media gid needed for /dev/fm (radio) and for /data/misc/media (tee)
+    group audio camera drmrpc inet media mediadrm net_bt net_bt_admin net_bw_acct oem_2901 wakelock
+    capabilities BLOCK_SUSPEND SYS_NICE
+    # setting RLIMIT_RTPRIO allows binder RT priority inheritance
+    rlimit rtprio 10 10
+    ioprio rt 4
+    task_profiles ProcessCapacityHigh HighPerformance
+    socket audio_hw_socket seqpacket 0666 system system
+    onrestart restart audioserver

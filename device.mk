@@ -358,9 +358,6 @@ PRODUCT_PACKAGES += \
     init.juice.perf.rc \
     init.target.rc \
     init.xiaomi.rc \
-    init.xiaomi.display.rc \
-    init.xiaomi.fingerprint.rc \
-    init.xiaomi.camera.rc \
     ueventd.juice.rc
 
 PRODUCT_COPY_FILES += \
