@@ -694,43 +694,6 @@ vendor/lib/vendor.qti.hardware.fm@1.0.so|c036fbe16575a800994792431d10f6d1173cea2
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|20617e5c5f367a3b74a7c441507b2fcfd22b949f
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|2f01b221540ba0c75b34f373b0b1201f10f9f8c0
 
-# Graphics Adreno - from MIUI
-vendor/lib/egl/eglSubDriverAndroid.so|8e0afc391ad3162a0f6fe6cfaa9dba82bcab47a7
-vendor/lib/egl/libEGL_adreno.so|3e66651955698ac2ac722ec1731d797ffe6ddee9
-vendor/lib/egl/libGLESv1_CM_adreno.so|db0459dabdbc6c3994832bd3118d13166235c3db
-vendor/lib/egl/libGLESv2_adreno.so|045c009a758f51229b985a6ce4760eddf05ba85c
-vendor/lib/egl/libq3dtools_adreno.so|ded4ca8998c2e50a37eede4f113ea81d51767bc6
-vendor/lib/egl/libq3dtools_esx.so|1e1fbfa1e26a6eff28e2cc842a1cec8356f4867a
-vendor/lib/libC2D2.so|631500e4ffd331eacf5459e356742b0cb8c5c1ca
-vendor/lib/libCB.so|f07297ee5a23673b00f0fc8b31a32c49c52be8fc
-vendor/lib/libGLESv2_adreno.so|c4b2417d1fdcee2429667b5eccd9a10c95b8d5f5
-vendor/lib/libOpenCL.so|447818ab36f25d2a85a479fb8edc77d4834df004
-vendor/lib/libVkLayer_q3dtools.so|8a1f798cc6da9174138c559aca01716c963982fe
-vendor/lib/libadreno_app_profiles.so|a4727fe869d7a4b60e729df024bd80b40b184912
-vendor/lib/libadreno_utils.so|f2cd44aaa5ab85649449e10be739ea749fd0c824
-vendor/lib/libc2d30_bltlib.so|358e0f2f28886fbb66335023b1cec38de74eb728
-vendor/lib/libgpudataproducer.so|d9222438b5bda9a2dff1e60e16bbbae48f22feec
-vendor/lib/libgsl.so|be9f85167721232ba8e04dbd6a01e12a9d1cc00f
-vendor/lib/libllvm-glnext.so|75c5d8be72977b2bc288af4b1c7ff309bb42bde7
-vendor/lib/libllvm-qcom.so|48e526f467c29ad2057b447d631e25d8bb9f5740
-vendor/lib64/egl/eglSubDriverAndroid.so|e33a80fe9b3c85dfde64ef3ec6e66b40d584ed85
-vendor/lib64/egl/libEGL_adreno.so|d65b4ec190f8693144c0937133a9798ac400cb72
-vendor/lib64/egl/libGLESv1_CM_adreno.so|e40ca5da67794d1b299587333849a23c2988b625
-vendor/lib64/egl/libGLESv2_adreno.so|4cff67c619c8f5d613aa5dcde0cee4ddca3833a0
-vendor/lib64/egl/libq3dtools_adreno.so|f664256a2638b83c0b6cf48a3273d57f12d15ac5
-vendor/lib64/egl/libq3dtools_esx.so|0cda75f637381d344da8d318f8c7f172cad28c52
-vendor/lib64/libC2D2.so|49c8c6d485375101a9bebf4245517bdbd53f196b
-vendor/lib64/libCB.so|a15446bd59ba2398de50640ca9b7b03f6be69ae3
-vendor/lib64/libOpenCL.so|2d43eaa7c9fa0a9de128344690957aa5d8e318bc
-vendor/lib64/libVkLayer_q3dtools.so|2eecf828a5d6cd2a0d683e6239d14e55fd4b5b3b
-vendor/lib64/libadreno_app_profiles.so|cde8706d38e90c3de86e85c9119c60d8c1010354
-vendor/lib64/libadreno_utils.so|f5acd04ca8cb309f3aa32cbc0d86ec973661f368
-vendor/lib64/libc2d30_bltlib.so|af6b2b37b363a4df90b16e56d8ea023cccbd038d
-vendor/lib64/libgpudataproducer.so|5e5c26264058d2c25c0838ffebb806eef505d9bd
-vendor/lib64/libgsl.so|23bc05080786f03a1d3dd0c75919ca62d7f83be7
-vendor/lib64/libllvm-glnext.so|153cd8be421715781b6de53e10c338e18446ac6b
-vendor/lib64/libllvm-qcom.so|05fe072a7944ef46bd8d05179a7c2cb75c319c11
-
 # Graphic Firmware - from MIUI
 vendor/firmware/a610_zap.b00|cdc0262ea8bc3fa3796be6150cd5430abeeeab8d
 vendor/firmware/a610_zap.b01|12b38ef620a0af5cbb089b3ccaa5b6df4a86c19b
@@ -756,10 +719,6 @@ vendor/firmware/a702_zap.b01|4025ac128f475aed1f450c91bf5708e11eae1304
 vendor/firmware/a702_zap.b02|57f9df7250b813f13313bc84d78eeb794ac60732
 vendor/firmware/a702_zap.elf|d51606fdc9297b7b7f29e320871bd28fcfcf53d5
 vendor/firmware/a702_zap.mdt|217b559a374a471c010dee8cc48b543d6973cb4a
-
-# Graphics Vulkan - from MIUI
-vendor/lib/hw/vulkan.adreno.so|d418461bfa2e6b8527394b8ec6a5a241061d2c77
-vendor/lib64/hw/vulkan.adreno.so|ca32fb25ca9629c8c9409b87e6beb783568df1c5
 
 # IMS - from MIUI
 vendor/bin/ims_rtp_daemon|4742d72c1e641179b05806dff0cd3c71af599b6b
