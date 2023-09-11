@@ -489,9 +489,6 @@ vendor/lib64/libcdfw_remote_api.so|e43217af385097ea8d939a7c0cc60c3e092ad086
 
 # Charger - from MIUI
 vendor/bin/hvdcp_opti|386521502994a4cf8cfa99a1362a68767c8c7700
-vendor/bin/init.qti.chg_policy.sh|0a6c4fd6b64173686c86911d49a665f287e4bc73
-vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc|29b23be4f604282abf715f86aec9697175a9aaad
-vendor/etc/charger_fstab.qti|8464c139d93f05e86ff9c9d31b3e8617b8d9476e
 
 # CNE - from MIUI
 -vendor/app/CneApp/CneApp.apk|0aa8f98f70b58521e2a11fd66de53a183b3094fc
