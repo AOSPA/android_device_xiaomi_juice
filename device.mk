@@ -113,7 +113,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=cherokee
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    persist.vendor.btstack.enable.lpa=true \
     persist.vendor.btstack.enable.twsplus=true
 
 # Camera
