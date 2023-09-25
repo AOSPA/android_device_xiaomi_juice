@@ -27,7 +27,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
 
 # Audio
-BOARD_SUPPORTS_OPENSOURCE_STHAL := true 
+BOARD_SUPPORTS_OPENSOURCE_STHAL := true
 
 PRODUCT_PACKAGES += \
     android.hardware.audio.service
@@ -43,77 +43,56 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.button_jack.switch=0
 
 PRODUCT_ODM_PROPERTIES += \
+    aaudio.mmap_policy=1 \
+    ro.vendor.audio.sdk.fluencetype=fluence \
     vendor.audio.hw.aac.encoder=false \
     vendor.audio.offload.buffer.size.kb=256
 
-PRODUCT_ODM_PROPERTIES += \
-    aaudio.mmap_policy=1 \
-    ro.vendor.audio.sdk.fluencetype=fluence
-
-PRODUCT_SYSTEM_PROPERTIES += \
-    ro.config.vc_call_vol_default=10 \
-    ro.config.vc_call_vol_steps=11
-
 PRODUCT_VENDOR_PROPERTIES += \
-    ro.audio.monitorRotation=true \
-    ro.vendor.audio.misound.bluetooth.enable=true \
     ro.vendor.audio.scenario.support=true \
     ro.vendor.audio.soundfx.type=mi \
     ro.vendor.audio.soundfx.usb=true \
     ro.vendor.audio.us.proximity=true
 
 PRODUCT_VENDOR_PROPERTIES += \
-    ro.vendor.audio.soundtrigger.appdefine.cnn.level=31 \
-    ro.vendor.audio.soundtrigger.appdefine.gmm.level=55 \
-    ro.vendor.audio.soundtrigger.appdefine.gmm.user.level=50 \
-    ro.vendor.audio.soundtrigger.appdefine.vop.level=10 \
-    ro.vendor.audio.soundtrigger.lowpower=true \
-    ro.vendor.audio.soundtrigger.training.level=50 \
-    ro.vendor.audio.soundtrigger.xanzn.cnn.level=70 \
-    ro.vendor.audio.soundtrigger.xanzn.gmm.level=45 \
-    ro.vendor.audio.soundtrigger.xanzn.gmm.user.level=30 \
-    ro.vendor.audio.soundtrigger.xanzn.vop.level=10 \
-    ro.vendor.audio.soundtrigger.xatx.cnn.level=27 \
-    ro.vendor.audio.soundtrigger.xatx.gmm.level=50 \
-    ro.vendor.audio.soundtrigger.xatx.gmm.user.level=40 \
-    ro.vendor.audio.soundtrigger.xatx.vop.level=10 \
-    ro.vendor.audio.soundtrigger=sva
+     ro.vendor.audio.soundtrigger=sva \
+     ro.vendor.audio.soundtrigger.lowpower=true \
+     ro.vendor.audio.soundtrigger.training.level=50 \
+     ro.vendor.audio.soundtrigger.xanzn.gmm.level=45 \
+     ro.vendor.audio.soundtrigger.xanzn.gmm.user.level=30 \
+     ro.vendor.audio.soundtrigger.xanzn.cnn.level=70 \
+     ro.vendor.audio.soundtrigger.xanzn.vop.level=10 \
+     ro.vendor.audio.soundtrigger.xatx.gmm.level=50 \
+     ro.vendor.audio.soundtrigger.xatx.gmm.user.level=40 \
+     ro.vendor.audio.soundtrigger.xatx.cnn.level=27 \
+     ro.vendor.audio.soundtrigger.xatx.vop.level=10 \
+     ro.vendor.audio.soundtrigger.appdefine.gmm.level=55 \
+     ro.vendor.audio.soundtrigger.appdefine.gmm.user.level=50 \
+     ro.vendor.audio.soundtrigger.appdefine.cnn.level=31 \
+     ro.vendor.audio.soundtrigger.appdefine.vop.level=10
 
 # Bluetooth
-PRODUCT_PACKAGES += \
-    audio.bluetooth.default \
-    android.hardware.bluetooth.audio@2.0 \
-    com.dsi.ant@1.0.vendor \
-    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
-    libbluetooth_audio_session \
-    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor
-
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0 \
-    android.hardware.bluetooth@1.0.vendor
-
 PRODUCT_PRODUCT_PROPERTIES += \
-    bluetooth.hardware.power.idle_cur_ma=7 \
+    bluetooth.hardware.power.idle_cur_ma=36 \
     bluetooth.hardware.power.operating_voltage_mv=3700 \
-    bluetooth.hardware.power.rx_cur_ma=75 \
-    bluetooth.hardware.power.tx_cur_ma=93
+    bluetooth.hardware.power.rx_cur_ma=20 \
+    bluetooth.hardware.power.tx_cur_ma=3 \
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac \
+    persist.bluetooth.a2dp_offload.disabled=false \
+    persist.bluetooth.disableabsvol=true \
     persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac \
-    persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true \
+    persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false \
     persist.vendor.qcom.bluetooth.enable.splita2dp=true \
     persist.vendor.qcom.bluetooth.scram.enabled=false \
     persist.vendor.qcom.bluetooth.soc=cherokee \
     persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
-    persist.vendor.btstack.enable.splita2dp=true \
-    persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac \
-    ro.vendor.bluetooth.wipower=false \
-    vendor.qcom.bluetooth.soc=cherokee
-
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    persist.vendor.btstack.enable.twsplus=true
+    persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac \
+    persist.vendor.bt.aac_frm_ctl.enabled=true \
+    persist.vendor.btstack.enable.lpa=true \
+    ro.bluetooth.a2dp_offload.supported=true \
+    ro.vendor.bluetooth.wipower=false
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -124,7 +103,7 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
-    
+
 PRODUCT_SYSTEM_PROPERTIES += \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera \
     vendor.camera.aux.packagelist.ext=org.codeaurora.snapcam,com.android.camera \
@@ -164,7 +143,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
    ro.crypto.volume.options=::v2
 
 # capabilityconfigstore
-PRODUCT_PACKAGES += vendor.qti.hardware.capabilityconfigstore@1.0.vendor
+PRODUCT_PACKAGES += \
+   vendor.qti.hardware.capabilityconfigstore@1.0.vendor
 
 # Dex/ART optimization
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
@@ -448,7 +428,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Thermal
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.sys.thermal.data.path=/data/vendor/thermal/
-    
+
 # Time-services
 PRODUCT_VENDOR_PROPERTIES += \
     persist.timed.enable=true
