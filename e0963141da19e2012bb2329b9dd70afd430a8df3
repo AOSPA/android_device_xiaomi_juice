@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c3a4cbbb_e07c6537",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000825
+      },
+      "writtenOn": "2023-10-08T05:50:47Z",
+      "side": 1,
+      "message": "With non-stock perf configs have stuttering and lags UI.",
+      "revId": "e0963141da19e2012bb2329b9dd70afd430a8df3",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
