@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4747752f_c2f55159",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000825
+      },
+      "writtenOn": "2023-10-08T05:49:41Z",
+      "side": 1,
+      "message": "Why from MIUI 12.5? MIUI 12.5 on xiaomi sm6115 very stable.",
+      "revId": "cbe21baf9eca5fef235c860bd39ba883dec05376",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    }
+  ]
+}
