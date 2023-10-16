@@ -296,6 +296,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# Privapp-permissions
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.control_privapp_permissions=log
+
 # Rootdir / Init files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom \

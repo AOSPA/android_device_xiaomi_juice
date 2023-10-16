@@ -101,7 +101,8 @@ BOARD_KERNEL_CMDLINE := \
     msm_rtb.filter=0x237 \
     service_locator.enable=1 \
     swiotlb=2048 \
-    loop.max_part=7
+    loop.max_part=7 \
+    androidboot.selinux=permissive
 
 BOARD_KERNEL_CMDLINE += androidboot.fstab_suffix=qcom
 BOARD_KERNEL_BASE := 0x00000000
@@ -174,6 +175,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Sepolicy
+SELINUX_IGNORE_NEVERALLOWS := true
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
