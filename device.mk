@@ -339,10 +339,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     wfd \
     wlan
 
-# QMI
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.qcomsysd.enabled=1
-
 # Radio
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.telephony.block_binder_thread_on_incoming_calls=false
@@ -404,10 +400,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
-# Storage.xml moment
-PRODUCT_SYSTEM_PROPERTIES += \
-    persist.sys.binary_xml=false
 
 # Snapdragon Vision
 PRODUCT_PROPERTY_OVERRIDES += \
