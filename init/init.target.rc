@@ -69,6 +69,10 @@ on late-fs
     mount_all --late
 
 on post-fs-data
+    # LIRC/IR
+    chown system system /dev/lirc0
+    chmod 0666 /dev/lirc0
+
     mkdir /vendor/data/tombstones 0771 system system
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
