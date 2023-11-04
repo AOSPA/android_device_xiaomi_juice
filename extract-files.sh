@@ -58,6 +58,9 @@ function blob_fixup() {
             llvm-strip --strip-debug  "${2}"
             "${PATCHELF}" --add-needed "libpiex_shim.so" "${2}"
             ;;
+        vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so)
+            sed -i "s/libhidltransport.so/libhidlbase_shim.so/" "${2}"
+            ;;
     esac
 }
 
