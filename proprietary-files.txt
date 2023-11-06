@@ -887,10 +887,6 @@ vendor/etc/perf/perfboostsconfig.xml|35f0c2ae05bd06636586842ce223917791af3900
 vendor/etc/perf/perfconfigstore.xml|7e094d0d72bbd11d252c966aad1819193c9c479f
 vendor/etc/powerhint.xml|9703e5700515b209ae9417d96d9614e237cfcb87
 
-# Protobuf - from MIUI
-vendor/lib/libprotobuf-cpp-lite-3.9.1.so|8a6144dc72693eb55ae0be50484c316f676ff147
-vendor/lib64/libprotobuf-cpp-lite-3.9.1.so|a59cadc480fe326044552f5930196f8970f6fbd1
-
 # Peripheral manager - from LA.UM.9.15.2.r1-07000-KAMORTA.QSSI-13.0
 vendor/bin/pm-proxy|8ea5c65add4af2dd1503023e8cfdcdf76b961c88
 vendor/bin/pm-service|8db29d527af4c10dad4bf398aa5cea2857ef78b9
