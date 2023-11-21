@@ -33,6 +33,10 @@ on init
     chown system system /sys/touchpanel/double_tap
     chmod 0660 /sys/touchpanel/double_tap
 
+    # Lineage Health
+    chmod 0660 /sys/class/power_supply/battery/input_suspend
+    chown system system /sys/class/power_supply/battery/input_suspend
+
     # Bind mount fastrpc_shell_3 for labelling
     mkdir /mnt/vendor/dsp 0770 root root
     copy /vendor/dsp/cdsp/fastrpc_shell_3 /mnt/vendor/dsp/fastrpc_shell_3
