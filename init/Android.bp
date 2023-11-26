@@ -37,6 +37,20 @@ prebuilt_etc {
     vendor: true,
 }
 
+prebuilt_etc {
+    name: "init.xiaomi.rc",
+    src: "init.xiaomi.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.juice.rc",
+    filename: "ueventd.rc",
+    src: "ueventd.juice.rc",
+    device_specific: true,
+}
+
 sh_binary {
     name: "init.qti.dcvs.sh",
     src: "init.qti.dcvs.sh",
