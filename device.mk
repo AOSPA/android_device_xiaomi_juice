@@ -317,7 +317,8 @@ PRODUCT_PACKAGES += \
     LimeSettingsProviderOverlay \
     LimeWifiOverlay \
     PomeloSettingsProviderOverlay \
-    PomeloWifiOverlay
+    PomeloWifiOverlay \
+    WifiMainline
 
 # Perf
 PRODUCT_COPY_FILES += \
