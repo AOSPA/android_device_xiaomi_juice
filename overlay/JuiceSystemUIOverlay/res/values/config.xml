@@ -37,4 +37,9 @@
     <!-- Ripple animation played at the time of screen unlock-->
     <bool name="config_enableUnlockRippleAnimation">false</bool>
 
+    <!-- The position of the volume dialog on the screen.
+         See com.android.systemui.volume.VolumeDialogImpl.
+         Value 19 corresponds to LEFT|CENTER_VERTICAL. -->
+    <integer name="volume_dialog_gravity">19</integer>
+
 </resources>
