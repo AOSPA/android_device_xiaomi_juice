@@ -114,7 +114,7 @@ TARGET_PROVIDES_LIBLIGHT := true
 TARGET_DISABLED_UBWC := true
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := lime,citrus,lemon,pomelo,juice
+TARGET_OTA_ASSERT_DEVICE := lime|citrus|lemon|pomelo|juice
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
