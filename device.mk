@@ -292,12 +292,20 @@ PRODUCT_SYSTEM_PROPERTIES += \
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPAJuiceFrameworksOverlay \
+    CitrusSettingsProviderOverlay \
+    CitrusWifiOverlay \
     JuiceCarrierConfigOverlay \
     JuiceFrameworksOverlay \
     JuiceNfcOverlay \
     JuiceSystemUIOverlay \
     JuiceTetheringOverlay \
-    JuiceWifiOverlay
+    JuiceWifiOverlay \
+    LemonSettingsProviderOverlay \
+    LemonWifiOverlay \
+    LimeSettingsProviderOverlay \
+    LimeWifiOverlay \
+    PomeloSettingsProviderOverlay \
+    PomeloWifiOverlay
 
 # Public libraries
 PRODUCT_COPY_FILES += \
