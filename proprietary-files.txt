@@ -707,6 +707,12 @@ vendor/firmware/a702_zap.b02|57f9df7250b813f13313bc84d78eeb794ac60732
 vendor/firmware/a702_zap.elf|d51606fdc9297b7b7f29e320871bd28fcfcf53d5
 vendor/firmware/a702_zap.mdt|217b559a374a471c010dee8cc48b543d6973cb4a
 
+# HotwordEnrollment - from MIUI
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED|be034975707dbd860441ad16746277f04bede8d2
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED|b53e90faf861f36c3b71f7f15f54960b1e9d6313
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
+-system_ext/framework/com.android.hotwordenrollment.common.util.jar|c764b636e0be426a66be09dd08ab9c1921327ef0
+
 # IMS - from MIUI
 vendor/bin/ims_rtp_daemon|4742d72c1e641179b05806dff0cd3c71af599b6b
 vendor/bin/imsdatadaemon|9959a03aeda573571cc1f9941b46a3f3966aa6ea
