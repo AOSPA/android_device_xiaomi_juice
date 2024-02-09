@@ -177,7 +177,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     drm.service.enabled=true
 
 # Dalvik
-$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
 # Enable Dynamic partition
 PRODUCT_BUILD_SUPER_PARTITION := false
