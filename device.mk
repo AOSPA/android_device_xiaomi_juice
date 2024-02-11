@@ -219,10 +219,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
 # GSI
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
-# GFX
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.config.avoid_gfx_accel=true
-
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
