@@ -483,7 +483,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.data.iwlan.enable=true \
+    ro.hardware.wlan.chip=wcn3988 \
     ro.hardware.wlan.dbs=0 \
+    ro.hardware.wlan.mimo=0 \
+    ro.hardware.wlan.vendor=qcom \
     ro.telephony.iwlan_operation_mode=legacy
 
 # Zygote
