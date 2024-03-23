@@ -1,6 +1,5 @@
 # Device proprietary files - from lime MIUI V12.5.11.0.RQJMIXM package, unless pinned
-# LA.UM.9.15.2.r1-07000-KAMORTA.QSSI-13.0 blobs from bengal
-# LA.VENDOR.1.0.r1-15600-WAIPIO blobs from taro
+# LA.UM.9.15.2.r1-09400-KAMORTA.QSSI14.0 blobs from bengal
 # qssi-user-11-RKQ1.201004.002-V12.5.7.0.RJFMIXM-release-keys blobs from citrus
 
 # ACDB - from MIUI
@@ -41,7 +40,7 @@ vendor/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd|92885cb
 vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd|b761b7b9d0b2e782ec557b0c333cc3efa924db4f
 vendor/etc/acdbdata/adsp_avs_config.acdb|ffe1bbdd396099377a8bb985fb4bcf24ef4e5d32
 
-# ADSP - from LA.UM.9.15.2.r1-07000-KAMORTA.QSSI-13.0
+# ADSP - from LA.UM.9.15.2.r1-09400-KAMORTA.QSSI14.0
 vendor/bin/loadalgo|7d3f0eda9dc6abf3973233dd10f7ef2529182b9c
 vendor/lib64/libloadalgo_stub.so|f544ef182d9cdc77e02eb8cc2a29ce4c02d0ddfc
 
@@ -129,31 +128,31 @@ vendor/lib/libspkrprot.so|044f62bf781bc7523c9e29104bcddbe6324b021e
 vendor/lib/libssrec.so|811813e23d3ddaf025564609d33072e3e0744985
 vendor/lib/libsurround_3mic_proc.so|491a5215660ad0b5acd14e6b28db7e26739019f6
 
-# Bluetooth - from LA.UM.9.15.2.r1-07000-KAMORTA.QSSI-13.0
+# Bluetooth - from LA.UM.9.15.2.r1-09400-KAMORTA.QSSI14.0
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|b0f73b4ac1a88607ec90b514b9602de423bb9be6
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|684a3e8990b2b5041cd4b396a5268526e567ff26
+vendor/lib/btaudio_offload_if.so|a6a47f8397048e0286d6291b1996d6af16cbe241
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so|57f6e2f04b4c965baaf295b587ecfda0a1a73f26
 vendor/lib/hw/audio.bluetooth_qti.default.so|6ce26888f5b67e3e211a7cfe11554d842162ae07
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|7d9503fce83522d27bcdae531a4e0b320281f85f
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so|a83e30d60645db71d5fcb57ef1dd708af95ed662
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|6a950eaa3066fcba19e1d94a04e5823059a951a8
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|de18f44f36a89f8fb8c8b6f5d2e0bff73acaabea
 vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|b2d984f5f0ed37f70b63a22d4d351d38b5c5e372
-vendor/lib/btaudio_offload_if.so|a6a47f8397048e0286d6291b1996d6af16cbe241
 vendor/lib/libbluetooth_audio_session_qti.so|0b306bac29ba1beff74c9e84785f0e77efb4402c
 vendor/lib/libbluetooth_audio_session_qti_2_1.so|b894e2e3768c2f3d6a21fae79a92663822e53450
 vendor/lib/libbt-hidlclient.so|2648e2161b8423073a6449a4ec72b3fb33123e7a
 vendor/lib/libbtnv.so|887149605c2f810e9e996354d24d2fdd39d13e5c
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|42595c79d388cc5ba1c2f50a0caa20640d5d5708
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so|b719b696b47d5ba10547bc7a969dd527e61ba650
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|2a544a1da16c5a31ce26058de2a3640a519d4017
+vendor/lib64/btaudio_offload_if.so|7c3dfa53e70b7706f1a69e56a9dda109b6ac500c
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|9e870e95c101f27195970d184776b7e8d14ceb51
 vendor/lib64/hw/audio.bluetooth_qti.default.so|e7f73d58e5f2a8ba9bb6aad8c5637c10841b066b
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|e30c268c385d3a75f86969e70c91410d2ab8b5bb
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so|a36dad6cac456b033e34e98945281284d52d8304
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|6afb681f9876d632c1369b11672a46e5d56b28c7
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|473f93f5d500186121d4b844b388a83e1e22297d
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|91fc2e9d2560ff260e83f044d0dd05ab50dfa9ad
-vendor/lib64/btaudio_offload_if.so|7c3dfa53e70b7706f1a69e56a9dda109b6ac500c
 vendor/lib64/libbluetooth_audio_session_qti.so|5bd4b55dc98a0e67200ff5e84196667390e1a0e7
 vendor/lib64/libbluetooth_audio_session_qti_2_1.so|1a24b6a9badc091f61389f0a122523eff6eab08e
 vendor/lib64/libbt-hidlclient.so|13e7ae0f423841ea5d6b722446acad3bbebf89ee
@@ -465,10 +464,6 @@ vendor/etc/init/android.hardware.configstore@1.1-service.rc|7c572d35c9825f056d2b
 # Consumer IR - from MIUI
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.bengal.so|1d7997ac1dfc22742e051c1a3eae91f5a566f8f9
 
-# CDSP - from LA.UM.9.15.2.r1-06000-KAMORTA.QSSI-13.0
-vendor/lib64/libcdfw.so|76aa65aea92ef92e0c4e4a6700c049d5de549c18
-vendor/lib64/libcdfw_remote_api.so|e43217af385097ea8d939a7c0cc60c3e092ad086
-
 # Charger - from MIUI
 vendor/bin/hvdcp_opti|386521502994a4cf8cfa99a1362a68767c8c7700
 
@@ -527,11 +522,11 @@ vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|c1515e1a8f060dc834e7189deb0e0b4
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so|878f819218e155fec02125f81715d2321b3ca64e
 vendor/lib64/vendor.qti.latency@2.0.so|ab1775138a2bf0587cd6cc990a432e0ad7dc2379
 
-# Capabilityconfigstore - from MIUI
-vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|0b729eef1d4e819db62fd771b66979eaee3566ef
+# Capabilityconfigstore - from LA.UM.9.15.2.r1-09400-KAMORTA.QSSI14.0
+vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|8faba5310d71eb9d67c5a5e0dbc22ba423f714e7
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
-vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|3e517ec6b4603c6c1f5945b3f131aa69bccb0b08
-vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|52006534d0d9a9093afce38414bd385f5193cec2
+vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|adae94cab65e5b91553ba8c76a4bdda7b4fdd1f6
+vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|2163df1cf52ef304f924bcc833947604036f4217
 
 # Display Calib Data - from MIUI
 vendor/etc/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.xml|11d8798a7fd52cb5df625cffddb579c521ee00d3
@@ -565,7 +560,7 @@ vendor/etc/qdcm_calib_data_sw43404_amoled_video_mode_dsi_boe_panel_with_DSC.xml|
 vendor/etc/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml|b25bd6cbadf7a26e37b8a365cddf41608d21545e
 vendor/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml|249fb8b9589fcd6f9953be343b9d6cf7a54be681
 
-# Display - from LA.UM.9.15.2.r1-07000-KAMORTA.QSSI-13.0
+# Display - from LA.UM.9.15.2.r1-09400-KAMORTA.QSSI14.0
 vendor/bin/ppd|c478fa8957564bf1b2649b6ba80c07f72b0b318f
 vendor/bin/qdcmss|536c34abfbf7833df440bfcd264bacdc88318067
 vendor/etc/display/advanced_sf_offsets.xml|de6449ddd7fd4e975ae29ce5aeeda1d6dff275ee
@@ -577,15 +572,15 @@ vendor/lib64/libmm-hdcpmgr.so|bacafd357b847581239b6d57f733404f6fb94ecc
 vendor/lib64/librcmask.so|c0c6d49dae38389532cfb3cb0b816dc0b1b71051
 vendor/lib64/libsdedrm.so|34e9f34b280f310118ea2b37e11e96d9440f3632
 
-# DPM - from LA.UM.9.15.2.r1-07000-KAMORTA.QSSI-13.0
-vendor/bin/dpmQmiMgr|df41c54776abef6edb12b1cd6d250abf5ea6c0a5
+# DPM - from LA.UM.9.15.2.r1-09400-KAMORTA.QSSI14.0
+vendor/bin/dpmQmiMgr|8ae4d370cd8ca5f7b22bbfefadc865c3515dd2ef
 vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|ad06856903b163a28135d6c8fd354258e3f0292c
 vendor/lib64/libdpmqmihal.so|67a75d6bd39f4bc825e14d21fa5b61e26ac82b22
 
-# Diag - from LA.UM.9.15.2.r1-07000-KAMORTA.QSSI-13.0
-vendor/lib/libdiag.so|9df9a6213573d51f486f51f2eb60d5dd3750e3fc
-vendor/lib64/libdiag.so|de040436b348059e951fcb9723da4ec31705b064
+# Diag - from LA.UM.9.15.2.r1-09400-KAMORTA.QSSI14.0
+vendor/lib/libdiag.so|a7d0954faa3cd4fd80eebe171e121a9b12dc1c5e
+vendor/lib64/libdiag.so|478e950b08940ce4b3100ff338a45fa1a98fe266
 
 # DRM - from MIUI
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|9bbbb98699438abb8da802c04b03f9a426e6140c
@@ -617,14 +612,16 @@ vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|b309e18174d46e30459a1ffbafd641c9
 vendor/lib64/vendor.qti.esepowermanager@1.0.so|48b202753701401c03d386dae7a00bef4aff153e
 vendor/lib64/vendor.qti.esepowermanager@1.1.so|0d8e2aee61fbbfb345870ca965458babbef9912f
 
-# EmbmsslServer - from MIUI
-vendor/bin/embmsslServer|49adb914b9e1f5597382338ddc5583b3ee289f86
-vendor/etc/init/init.embmssl_server.rc|6d81671d87097afa440f0dc8b5850b38a3e6726a
-vendor/lib64/libembmsservice.so|1781fcaf8ae00b9d2ed8c7c98b4aa7eef99a311a
-vendor/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so|ca24dd306316f728f2b294cab6b3171d9275a89a
-vendor/lib64/vendor.qti.hardware.embmssl@1.0.so|3c44bebb5f4ad3a82a97eee79a41560ab8d8fe01
+# EmbmsslServer - from LA.UM.9.15.2.r1-09400-KAMORTA.QSSI14.0
+vendor/bin/embmsslServer|35b209c57e7ccd2eac19a3c91851d41ab63af3c9
+vendor/etc/init/init.embmssl_server.rc|e2f59e5d6223112bdcfbf9e9e69fe6abea3698b1
+vendor/lib64/libembmsservice.so|797b5cff7b5fb2aac043c3e3b3e0928e1b7c5ea9
+vendor/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so|ea1c0003f7ac057e67ca8a49cc1a25a7287c2a95
+vendor/lib64/vendor.qti.hardware.embmssl@1.0.so|e4fc8e5b0e7e9c609ed8c78309c3d6d86a131802
+vendor/lib64/vendor.qti.hardware.embmssl@1.1-adapter-helper.so|86a03bcc9a34bff0bd29f6c862da248fb81d7d55
+vendor/lib64/vendor.qti.hardware.embmssl@1.1.so|a4f353cac95f9cf034a5a91fe6419f6fb85f3d70
 
-# Factory - from LA.UM.9.15.2.r1-07000-KAMORTA.QSSI-13.0
+# Factory - from LA.UM.9.15.2.r1-09400-KAMORTA.QSSI14.0
 vendor/bin/hw/vendor.qti.hardware.factory@1.0-service|cacf96d37eb787d153ffaa3aa7312524045d8132
 vendor/bin/mmid|dd5fd065fae235b8eb05fbfad3f1ee910bf7316e
 vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc|b47de7097f6b81ad6a6b05f70a2678861fda69fb
@@ -658,7 +655,7 @@ vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so|98a8689e5aa
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|47afe5427f5673e39f4642999df2857fbd1bac04
 vendor/lib64/vendor.silead.hardware.fingerprintext@1.0.so|e543a0ba3b76371d88afb9670721fe203ccf788d
 
-# FM - from LA.UM.9.15.2.r1-07000-KAMORTA.QSSI-13.0
+# FM - from LA.UM.9.15.2.r1-09400-KAMORTA.QSSI14.0
 vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|70aef41d8ced7832afc90dcf4ea83623e5e1c265
 vendor/lib/vendor.qti.hardware.fm@1.0.so|c036fbe16575a800994792431d10f6d1173cea26
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|084154df521025d3d6b4402cd8edcd06510e169c
@@ -834,57 +831,57 @@ vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so|0babf1ad82114e59d53a567b22
 vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.1.so|f75c7b5cdbd558bb3b12255f13877d22fba2ac5c
 vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.2.so|8f19cbc503b7b5c0f1edeb7af0e5d4938e2697a4
 
-# Media - from LA.UM.9.15.2.r1-07000-KAMORTA.QSSI-13.0
+# Media - from LA.UM.9.15.2.r1-09400-KAMORTA.QSSI14.0
 vendor/lib/libOmxAacDec.so|c294bf10a6cc46039ee1cd5052f906acbaa60cde
 vendor/lib/libOmxAacEnc.so|8c6d989c860fe6c3f9da529f0f34d4015f35a76c
 vendor/lib/libOmxAlacDec.so|f8b6d0dcedbcd9c9246c8b8ffc04c16c17ead152
-vendor/lib/libOmxAlacDecSw.so|632eb320c5535fbc037ba976a00d8bc2e0869a8a
+vendor/lib/libOmxAlacDecSw.so|798bb0fde3cc622f4dc37571f33c7218f039c413
 vendor/lib/libOmxAmrDec.so|5927dc41757d5cc1b436f6459ffbadedc87322b6
 vendor/lib/libOmxAmrEnc.so|bf63f64862725b88e79d271ef74da834ae51dfc2
 vendor/lib/libOmxAmrwbplusDec.so|0703efa36b87bb39a29e7f434534eedb289960fc
 vendor/lib/libOmxApeDec.so|1746b2095fefaa6e201209f994e7fecf7fa759cd
-vendor/lib/libOmxApeDecSw.so|c6b43fa859456962fd86026bce0e0b5524da5c7a
+vendor/lib/libOmxApeDecSw.so|5fc6886b8a1884c4f395150a3197284b5d82959b
 vendor/lib/libOmxCore.so|5288e62922786ea87edef286ab02ef047c8ce26b
-vendor/lib/libOmxDsdDec.so|1b2b66909cc33493b8082f8db404bb1d6a623c47
-vendor/lib/libOmxEvrcDec.so|9dea1da059673eb5e39669b530cd02bf3a3b8173
+vendor/lib/libOmxDsdDec.so|47fff76571d63b3e2fcc9eb7cb018cb552efe5e0
+vendor/lib/libOmxEvrcDec.so|33b83d00dded863bbc74ec0d6c44e6c34527f859
 vendor/lib/libOmxEvrcEnc.so|9300fc546da0afb9b33ed8be8c9d75d08ee7e3a9
 vendor/lib/libOmxG711Dec.so|0c0791c44bbd9e0ac5c5a5826dd080a4cfaee0cd
 vendor/lib/libOmxG711Enc.so|df1a27ed7cfffc0dfac38c4976b7e5b76163aa2e
-vendor/lib/libOmxMpeghDecSw.so|58da9f55e9d7890cbeec7b051d2bcc762a367e59
+vendor/lib/libOmxMpeghDecSw.so|49cdaea256723a270b78a06a80aa5da625747f71
 vendor/lib/libOmxMpeghEncSw.so|de5bfcb755f753df9008c4a555d69b7a7149b7d8
-vendor/lib/libOmxQcelp13Dec.so|9c1c111af42c7b00c505614fe9a6d1779e7bb2bc
+vendor/lib/libOmxQcelp13Dec.so|ae048f379c4420867fed2f8a1fe69a4a17ead97c
 vendor/lib/libOmxQcelp13Enc.so|06060c472a8ab37d9f27432734fa502998ab2e46
 vendor/lib/libOmxSwVdec.so|cd4c2e1b427eb2df6435dc75003b15d24f77b028
 vendor/lib/libOmxSwVencMpeg4.so|a0260145565470288c6806fd4c1c05ff689bdf04
-vendor/lib/libOmxVdec.so|7730251b405f4afc5b9b252a5bddbd4779358bea
-vendor/lib/libOmxVenc.so|4c3fa1e1620af0491c60e87bd1607710e44f1b57
+vendor/lib/libOmxVdec.so|c433b5533ab93e6bad1eacba8b8106ef48d5095e
+vendor/lib/libOmxVenc.so|3e327457a07f56e122684a212d1f1e179262ac05
 vendor/lib/libOmxVideoDSMode.so|1d8862f6b734d85e7f35a0b618fa0f1dc972cdce
 vendor/lib/libOmxWmaDec.so|dacf67e80ef9f499cc06663a98276b23d426259e
-vendor/lib/libdsd2pcm.so|0c58ffeef76c119c349c4ce44c297132369ae08e
-vendor/lib/libmmosal.so|e0ce8f258590ab9f06447a1e42eeb2bc9923edcd
+vendor/lib/libdsd2pcm.so|211fba279dc4f9640df709331573aacd88d3b0b3
+vendor/lib/libmmosal.so|afcc506e793783fa128fc778d3e07e8fbc77de7c
 vendor/lib64/libOmxAacDec.so|005431161cd3159341eca49ba6be9df9195de173
 vendor/lib64/libOmxAacEnc.so|0a44ab2269db480711616e3e147b745e21c99cd3
 vendor/lib64/libOmxAlacDec.so|2b6f49a155bb5cf27442a3ebfe3fb7487b50e86e
-vendor/lib64/libOmxAlacDecSw.so|048ba28e23e5bfb807a9c32d6fd2d2cf654a5b9c
+vendor/lib64/libOmxAlacDecSw.so|196bfd98a1a60b735514f53759b692a9645c34d7
 vendor/lib64/libOmxAmrDec.so|b3163a660e4f579f12cd259361efe1e933b90dec
 vendor/lib64/libOmxAmrEnc.so|5f0bacdccd5e4f2b3c8070bb426f9ad388967f59
 vendor/lib64/libOmxAmrwbplusDec.so|c878e8a774ea793cff723f4edb67da7d1d4f4319
 vendor/lib64/libOmxApeDec.so|e57aeea22da6b1056e827367f0751ab9a41b4fa3
-vendor/lib64/libOmxApeDecSw.so|337b60d347cdc2253527a7bc9ff3423ef0b27061
+vendor/lib64/libOmxApeDecSw.so|f340ed39a86ddd18275f953508db792f8e2b96ec
 vendor/lib64/libOmxCore.so|44d6358877e72f419e09369d4cab8902ee52a1c6
-vendor/lib64/libOmxEvrcDec.so|067c201fbddce454285877bb749e0088d45a1ecb
+vendor/lib64/libOmxEvrcDec.so|7817199449cdd67218185637d14ca2d3298d9222
 vendor/lib64/libOmxEvrcEnc.so|d195bb28e6a7bef755edb0ba858378ff9ce8c8a7
 vendor/lib64/libOmxG711Dec.so|b8efe1a32845004753bbf576952cf0f26c64aa17
 vendor/lib64/libOmxG711Enc.so|dba196f97c341c2990a4d015a7b7723355e29200
 vendor/lib64/libOmxMpeghEncSw.so|ad56a2faf16b6b4aca444a0b5baec87484a6255c
-vendor/lib64/libOmxQcelp13Dec.so|29b65fc511cec1f37f03db853882a96da8d13e04
+vendor/lib64/libOmxQcelp13Dec.so|378d8941f63477b7f86c3b2817c0cadb158fa37c
 vendor/lib64/libOmxQcelp13Enc.so|7a54ed15ff24595de7eabbb5e6cf44eeff7525e1
 vendor/lib64/libOmxSwVdec.so|d0e2fb15b69757bd9a7f6d1d3cbfb828ac446be5
 vendor/lib64/libOmxSwVencMpeg4.so|0b32d6e8e1f40e512961c59e709a53685a638fc4
-vendor/lib64/libOmxVdec.so|286a7cca51c33dab37475cc3c3954b505debbfc8
-vendor/lib64/libOmxVenc.so|c2dfc41dc06044f63effee163ab9e08869a6d6ae
+vendor/lib64/libOmxVdec.so|608e9290104febc95e1a80406f60e7f4f3ff013c
+vendor/lib64/libOmxVenc.so|f9c6bbf293fac62f3d70eee8f3b0c3c9a22cb91d
 vendor/lib64/libOmxWmaDec.so|7c83ae668dbba2f16d26c547baa5956ea2633cc4
-vendor/lib64/libmmosal.so|a16d2c88525594dc0dd257412f5d5491dcc4b685
+vendor/lib64/libmmosal.so|bed2543b929495e9b3eb14538d74adcdb846710e
 
 # Neural networks - from MIUI
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti|23ecf84c98fdab256f34a6e92b275ec30d69228d
@@ -908,12 +905,12 @@ vendor/lib64/nfc_nci.st21nfc.st.so|a0b309479985e7c803c189f3fe9651e4a07b4086
 vendor/firmware/st21nfc_fw.bin|f3415b51288b7114d856bdb671c218bba21c31c2
 vendor/firmware/st21nfc_fw7.bin|911906c79d9bdce044e74165036c63dc1295b852
 
-# Peripheral manager - from LA.UM.9.15.2.r1-07000-KAMORTA.QSSI-13.0
+# Peripheral manager - from LA.UM.9.15.2.r1-09400-KAMORTA.QSSI14.0
 vendor/bin/pm-proxy|8ea5c65add4af2dd1503023e8cfdcdf76b961c88
 vendor/bin/pm-service|8db29d527af4c10dad4bf398aa5cea2857ef78b9
 vendor/lib64/libperipheral_client.so|371cc38073c9d9bf8614f992e57a5a9891691191
 
-# QCV (SOC Helper) - from LA.UM.9.15.2.r1-07000-KAMORTA.QSSI-13.0
+# QCV (SOC Helper) - from LA.UM.9.15.2.r1-09400-KAMORTA.QSSI14.0
 vendor/bin/init.qti.qcv.sh|355a70cde39583a7f2a07441ba5ab1ed4d7feb18
 vendor/etc/init/init.qti.qcv.rc|1d0cff5660bdf7abc22ac2b960a0dcd88404d740
 vendor/lib64/libsoc_helper.so|cdd194a76c1ff4836411babeb329090c4eae8d3b
@@ -1131,12 +1128,14 @@ vendor/lib64/libhdcp1prov.so|05cd8b47ca2b82779f525e981bbfd308c1fa20fd
 vendor/lib64/libhdcp2p2prov.so|447b73dab4059a7e469a6d839bffcbfec3458f1b
 vendor/lib64/libhdcpsrm.so|8b6e5f09264b989a120013bfec644d103d3f1ea7
 
-# Snapdragon Computer Vision Engine - from LA.UM.9.15.2.r1-07000-KAMORTA.QSSI-13.0
+# Snapdragon Computer Vision Engine - from LA.UM.9.15.2.r1-09400-KAMORTA.QSSI14.0
+vendor/lib/libfastcvdsp_stub.so|7f27cee24281bc9bf4f08c6100cc66bd650d8efb
 vendor/lib/libscveCommon.so|4be56b846f71f4ba8032471abf9f02dc5b01810c
 vendor/lib/libscveCommon_stub.so|89e1a3d3302b6809ae4ca1d80f6c2e0cd3c3b752
 vendor/lib/libscveObjectSegmentation.so|b60b43377262ef6cc7882ff5cc49d35e4c516670
 vendor/lib/libscveObjectSegmentation_stub.so|f1a139933c16c2fde367506fe0419c15684a2d3c
 vendor/lib/libscveObjectTracker.so|26318c862d3d56596fe7208ebcc3ae1900f7d55f
+vendor/lib64/libfastcvdsp_stub.so|9813b36faa8029bdb358126c2996207fc7704d32
 vendor/lib/libscveObjectTracker_stub.so|cafdeed8fa0d51672806038065cf4ce38d442b6b
 vendor/lib64/libscveCommon.so|237b6432dfb9d7b6ac5d5522591db0972755bb5b
 vendor/lib64/libscveCommon_stub.so|bb5dc4c59d04e35020f4422ae3e19c8cfd0d1537
@@ -1147,7 +1146,7 @@ vendor/lib64/libscveObjectTracker_stub.so|62db08e185e915fe975e5234d1ce1d749e6e97
 vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so|9119bd42ad43e0e60cdc0626d6a483fc5d793f1a
 vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so|2d463ceff139c3132b2c6936be8938334ba46abd
 
-# Soter - from LA.UM.9.15.2.r1-07000-KAMORTA.QSSI-13.0
+# Soter - from LA.UM.9.15.2.r1-09400-KAMORTA.QSSI14.0
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|8e315a85eeeb94a51f1533c80212d2fc0ec88760
 vendor/bin/vendor.qti.hardware.soter@1.0-provision|d1fbc5777ca05a7405b9e65e334b22894cf29155
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb7e8ca000e48bd28ae
@@ -1172,21 +1171,21 @@ vendor/etc/thermald-devices.conf|1ad9202886d3d7ea79237505aa41a8c1f7229da2
 -vendor/lib/libthermalclient.so|196acc1aaae1810ea9ba56bf9e1bb9ee2e486f6a
 -vendor/lib64/libthermalclient.so|18d9f7ec494d7c7d1744b14072ac0565daa5dc5d
 
-# Time - from LA.UM.9.15.2.r1-07000-KAMORTA.QSSI-13.0
+# Time - from LA.UM.9.15.2.r1-09400-KAMORTA.QSSI14.0
 -vendor/app/TimeService/TimeService.apk|92317b3b72586489456d37057b4c3c8e55863923
 vendor/bin/time_daemon|5ac6b1af3c41eecad1e522df8e272db5fab86523
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 vendor/lib64/libtime_genoff.so|17547993adc4fb9cb1cdc1abbd765f4ef9a05f09
 
-# TLOC - from LA.UM.9.15.2.r1-07000-KAMORTA.QSSI-13.0
+# TLOC - from LA.UM.9.15.2.r1-09400-KAMORTA.QSSI14.0
 vendor/bin/tloc_daemon|4b74a8b23a9a9a6f0c4b43e9cfe8e78ca74fdc30
 vendor/etc/init/tloc_daemon.rc|9dd38e92847bc34f8a3228f4cd81ef14b6e89785
 
-# Trusted Execution Environment connector - from LA.UM.9.15.2.r1-07000-KAMORTA.QSSI-13.0
+# Trusted Execution Environment connector - from LA.UM.9.15.2.r1-09400-KAMORTA.QSSI14.0
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|4167b12a9f09c52a4dc1555f243dec17051b8a23
-vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|b92070d73c9963c985d71c7f69ebc9f418c7d07d
-vendor/lib64/libGPQTEEC_vendor.so|d70f659c06a38dbae028f41ca6e0dece0ef1d5cd
+vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|55c2f0c1e93fccb49ef9919cd56e5903ac14d517
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|dafbd7106e74240a2e70cf55dccbea49d35d2791
+vendor/lib64/libGPQTEEC_vendor.so|f8dcd605622b1b8e71192b01f35b0e84070d4c75
 vendor/lib64/libGPTEE_vendor.so|92c0215dbd3271e597d536c259df44aac716a402
 vendor/lib64/libQTEEConnector_listener.so|a05a271a35ff4f558f4665b4467b5eb66f56716b
 vendor/lib64/libQTEEConnector_vendor.so|30e5fd8d4fff50083f44f6d0bd09f4bd287a8366
@@ -1211,7 +1210,7 @@ vendor/firmware/nt33672d_tianma_novatek_ts_mp.bin|de8eaf51898893d77a1e677bc75856
 vendor/firmware/nt33672d_xinli_novatek_ts_fw.bin|43a850f846065db10b2e3d431a95f8ddd0a5bf83
 vendor/firmware/nt33672d_xinli_novatek_ts_mp.bin|73d148bd25c851e0befa907ecd402af91d67c28c
 
-# UBWC - from LA.UM.9.15.2.r1-07000-KAMORTA.QSSI-13.0
+# UBWC - from LA.UM.9.15.2.r1-09400-KAMORTA.QSSI14.0
 vendor/lib/libstreamparser.so|49b5a007a6c6ec31a97c00062a421988536f6238
 
 # Widevine DRM - from MIUI
@@ -1229,8 +1228,8 @@ vendor/bin/cnss-daemon|41dc69f7ad479aea585b5ff3a78a59bdd9522c2f
 vendor/etc/wifi/aoa_cldb_falcon.bin|7511e868c40e66e9758568b7112894cbce2650a4
 vendor/etc/wifi/aoa_cldb_swl14.bin|2a3be07a8f24bc1b9798d07c7133b0f71b77738f
 
-# WiFi Display - from LA.UM.9.15.2.r1-07000-KAMORTA.QSSI-13.0
-vendor/bin/wfdhdcphalservice|40c3d329f49cbb56286d6a550cc8b12ac95048df
+# WiFi Display - from LA.UM.9.15.2.r1-09400-KAMORTA.QSSI14.0
+vendor/bin/wfdhdcphalservice|768476bd30672982e07937e8a765537cc23481c9
 vendor/bin/wfdvndservice|194bb3aef5237f05d0c8fab2c88846147a6cc55a
 vendor/bin/wifidisplayhalservice|36bddae1febbee1bb53a80646d17c0fe36199757
 vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc|c266f08783a17f6583e3f22c85e55b0c200442ea
@@ -1240,29 +1239,29 @@ vendor/etc/seccomp_policy/wfdhdcphalservice.policy|23b46af886f3233c2bddff87507ae
 vendor/etc/seccomp_policy/wfdvndservice.policy|b46f0c22a1f9b65c6750205e161c0a3f84ac716b
 vendor/etc/seccomp_policy/wifidisplayhalservice.policy|698f46d3a3b89be125e2fe88439c770e5c647037
 vendor/etc/wfdconfig.xml|9e13371f7ae509cc0bbb3f2ace93c5ea5d87bf0f
-vendor/lib/libFileMux_proprietary.so|b1e2801f2be356ff88bf5d6269ef7f9c655dff67
+vendor/lib/libFileMux_proprietary.so|350e50a857eaca20feb77e9c886068055818c3bc
 vendor/lib/libmm-hdcpmgr.so|bf1cf616023ed7a84f44ab323002dd368785d679
-vendor/lib/libmmrtpdecoder_proprietary.so|d15b2eed6333693d40cd3d96e56873f707e889ff
-vendor/lib/libmmrtpencoder_proprietary.so|997e08f2c9bd8ca971105f7afacc886853e2abae
-vendor/lib/libwfdcodecv4l2_proprietary.so|5e10169a6871df460d57b9c4fa01a5c45e7a2421
-vendor/lib/libwfdcommonutils_proprietary.so|585527a3d010a0da02f3995aff3866493fc8bbf4
-vendor/lib/libwfdconfigutils_proprietary.so|acaeb47249f02eec08a70c07cd413ddbd5a77b6b
+vendor/lib/libmmrtpdecoder_proprietary.so|f95339c9cd1128bd1425c148b90fae8555720d3e
+vendor/lib/libmmrtpencoder_proprietary.so|399e4f5edae72e267828b4abea04a1b1a02eff30
+vendor/lib/libwfdcodecv4l2_proprietary.so|90934119102a43642f6ea3954116c300a8a3ed71
+vendor/lib/libwfdcommonutils_proprietary.so|850c523591db802c01d90982c355cdc7e1844458
+vendor/lib/libwfdconfigutils_proprietary.so|6653918457d115641cdfb1402ad6176276f7e8f2
 vendor/lib/libwfddisplayconfig_proprietary.so|f24b3956a71df1f9602a0cfd486616e4f79c01bf
-vendor/lib/libwfdhdcpcp.so|28888f71bbc4ce563bcf77ff375af7ea9012715a
+vendor/lib/libwfdhdcpcp.so|92ea12f382eb63a96c3dafbecf7d90bf91d5b5e8
 vendor/lib/libwfdhdcpservice_proprietary.so|638d734d842c6eb5d5c3fd53d52b015b6c148fee
 vendor/lib/libwfdmminterface_proprietary.so|afb38905fdc951985357765e830e2a14720ce668
 vendor/lib/libwfdmmservice_proprietary.so|3e813eceb99e6c82184fad95a88ac5fe6a877a7d
-vendor/lib/libwfdmmsrc_proprietary.so|897e34a93ac55dd90eb8fc534c4cbf1520bbbd0b
+vendor/lib/libwfdmmsrc_proprietary.so|9f7c7413ef233729b644bf01519fd16f88272958
 vendor/lib/libwfdmodulehdcpsession.so|b4c986dd4f079f0d3ce06b6711e58532a538ad5c
-vendor/lib/libwfdrtsp_proprietary.so|86ed13764a23e52b37784019a11ed57c91fbb4cc
-vendor/lib/libwfdsessionmodule.so|3e84e1bea7249e52606df3e40d61a7d2cf2040a0
-vendor/lib/libwfdsourcesession_proprietary.so|1023f7930bd892ae4617719d6c5bc5a1e992f35f
-vendor/lib/libwfdsourcesm_proprietary.so|6cf1e24bb6f8c20ecd6a89a2cfe32b8b51554358
+vendor/lib/libwfdrtsp_proprietary.so|c3587bb20fcb047499e80d0ffd97a2d7db092248
+vendor/lib/libwfdsessionmodule.so|0a30065841b94cbefa6775b73157e61bbd96f6a4
+vendor/lib/libwfdsourcesession_proprietary.so|c1eaaec718aca421dd4b8a294678a5695dfcb2be
+vendor/lib/libwfdsourcesm_proprietary.so|fb91ee8496251a2b64dfccdb6fe28863bbcce78c
 vendor/lib/libwfduibcinterface_proprietary.so|6c58302aa9d8b8ff044c6e79ddfb5ef9ce01b57e
-vendor/lib/libwfduibcsink_proprietary.so|677bbedf0beed487348d9792cdfe4cde3062d33f
+vendor/lib/libwfduibcsink_proprietary.so|1494b91472803b7d7e51044d50b96c4193251c82
 vendor/lib/libwfduibcsinkinterface_proprietary.so|c8b59137820fc3d27d9186b57bbcb8b06bc80299
-vendor/lib/libwfduibcsrc_proprietary.so|c89cd0772f8fdea83fec1feae66ca635aa0b563d
+vendor/lib/libwfduibcsrc_proprietary.so|5ef39723ad9858b26c24a0c4853723a08183ef5c
 vendor/lib/libwfduibcsrcinterface_proprietary.so|826a3a7c9f81e63abe1cf805e6abca2d1e6e0afb
 vendor/lib/libwfdutils_proprietary.so|f60f70ba7efdcb773bed04815da7c88f2e63d6b9
 vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so|1c38bab7199c0ebd418749b16dc8e10610eaf17c
-vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so|a964ebf868307e4ef84c614154184d9c3afe8c86
+vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so|dd1f77c8824c288fae5410e3e2ae0b55e206053b
