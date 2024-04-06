@@ -18,24 +18,16 @@ property Name is called. -->
     <PerfConfigs>
 
                 <!--Vendor Properties -->
-                <Prop Name="vendor.debug.enable.lm" Value="true" />
+                <Prop Name="vendor.debug.enable.lm" Value="false" />
                 <Prop Name="vendor.iop.enable_uxe" Value="1" />
-                <Prop Name="vendor.enable.prefetch" Value="false" />
+                <Prop Name="vendor.enable.prefetch" Value="1" />
                 <Prop Name="vendor.iop.enable_prefetch_ofr" Value="0" />
-                <Prop Name="vendor.perf.iop_v3.enable" Value="false" />
+                <Prop Name="vendor.perf.iop_v3.enable" Value="true" />
                 <Prop Name="vendor.perf.iop_v3.enable.debug" Value="false" />
-                <Prop Name="vendor.iop.enable_speed" Value="false" />
                 <Prop Name="vendor.debug.enable.memperfd" Value="true" />
-                <Prop Name="ro.vendor.perf.enable.procomp" Value="false" />
                 <Prop Name="vendor.perf.pfar.enable" Value="1"/>
                 <!-- AOSPA Edit: Disable IOPd explicitly -->
                 <Prop Name="vendor.iop.enabled" Value="false" />
-
-                <Prop Name="ro.vendor.perf.ss" Value="false" />
-                <Prop Name="ro.vendor.perf.lal" Value="false" />
-                <Prop Name="ro.vendor.perf.lgl" Value="false" />
-                <Prop Name="ro.vendor.perf.splh" Value="false" />
-                <Prop Name="ro.vendor.perf.lplh" Value="false" />
 
                 <!--System Properties -->
                 <Prop Name="ro.vendor.qti.sys.fw.bservice_age" Value="300000" />
@@ -45,32 +37,27 @@ property Name is called. -->
                 <Prop Name="ro.vendor.qti.sys.fw.empty_app_percent" Value="50" />
                 <Prop Name="ro.vendor.qti.sys.fw.trim_empty_percent" Value="100" />
                 <Prop Name="ro.vendor.qti.sys.fw.trim_cache_percent" Value="100" />
-                <Prop Name="ro.vendor.qti.sys.fw.trim_enable_memory" Value="4294967296" />
+                <Prop Name="ro.vendor.qti.sys.fw.trim_enable_memory" Value="2147483648" />
                 <Prop Name="ro.vendor.qti.am.reschedule_service" Value="true" />
                 <Prop Name="ro.vendor.iocgrp.config" Value="0" />
                 <Prop Name="vendor.perf.gestureflingboost.enable" Value="true" />
-                <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="38" />
                 <Prop Name="ro.vendor.at_library" Value="libqti-at.so" />
-                <Prop Name="vendor.appcompact.enable_app_compact" Value="true" />
-                <Prop Name="vendor.appcompact.full_compact_type"  Value="2" />
-                <Prop Name="vendor.appcompact.some_compact_type"  Value="4" />
                 <Prop Name="vendor.perf.bgt.enable" Value="true" />
 
-                <!--Mention all the khaje specific properties here -->
-                <Prop Name="vendor.iop.enable_uxe" Value="0" Target="khaje" />
-                <Prop Name="ro.vendor.perf.enable.procomp" Value="true" Target="khaje" />
-                <Prop Name="ro.vendor.perf.qgpe" Value="true" Target="khaje" />
-                <Prop Name="ro.vendor.perf.qape" Value="true" Target="khaje" />
-
-                <!--Appcompaction Properties -->
-                <Prop Name="vendor.appcompact.compact_throttle_somesome"   Value="5000" Target="khaje" />
-                <Prop Name="vendor.appcompact.compact_throttle_somefull"   Value="10000" Target="khaje" />
-                <Prop Name="vendor.appcompact.compact_throttle_fullsome"   Value="500" Target="khaje" />
-                <Prop Name="vendor.appcompact.compact_throttle_fullfull"   Value="10000" Target="khaje" />
-                <Prop Name="vendor.appcompact.compact_throttle_bfgs"       Value="600000" Target="khaje" />
-                <Prop Name="vendor.appcompact.compact_throttle_persistent" Value="600000" Target="khaje" />
-                <Prop Name="vendor.appcompact.rss_throttle_kb"             Value="12000" Target="khaje" />
-                <Prop Name="vendor.appcompact.delta_rss_throttle_kb"       Value="8000" Target="khaje" />
-
+                <!--Mention all the target/kernel specific properties at the end of xml file
+                    All the default valuea are kept above-->
+                <Prop Name="ro.vendor.qti.sys.fw.bg_apps_limit" Value="38" />
+				
+                <Prop Name="vendor.appcompact.enable_app_compact" Value="true" />
+                <Prop Name="vendor.appcompact.full_compact_type"  Value="2" />
+                <Prop Name="vendor.appcompact.some_compact_type"  Value="2" />
+                <Prop Name="vendor.appcompact.compact_throttle_somesome" Value="5000" />
+                <Prop Name="vendor.appcompact.compact_throttle_somefull" Value="10000" />
+                <Prop Name="vendor.appcompact.compact_throttle_fullsome" Value="500" />
+                <Prop Name="vendor.appcompact.compact_throttle_fullfull" Value="10000" />
+                <Prop Name="vendor.appcompact.compact_throttle_bfgs" Value="600000" />
+                <Prop Name="vendor.appcompact.compact_throttle_persistent" Value="600000" />
+                <Prop Name="vendor.appcompact.rss_throttle_kb" Value="12000" />
+                <Prop Name="vendor.appcompact.delta_rss_throttle_kb" Value="8000" />
     </PerfConfigs>
 </PerfConfigsStore>
