@@ -121,9 +121,6 @@ ro.vendor.display.sensortype=2
 vendor.display.svi.config=1
 vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
 
-# Subsystem silent restart
-persist.vendor.ssr.restart_level=ALL_ENABLE
-
 # Thermal
 vendor.sys.thermal.data.path=/data/vendor/thermal/
 
