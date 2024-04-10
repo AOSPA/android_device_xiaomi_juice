@@ -1,0 +1,19 @@
+# Media
+media.aac_51_output_enabled=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-http=true
+media.stagefright.enable-player=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-scan=true
+mmp.enable.3g2=true
+persist.mm.enable.prefetch=true
+
+# Netmgr
+persist.data.netmgrd.qos.enable=true
+
+# Radio
+ro.telephony.block_binder_thread_on_incoming_calls=false
+
+# WFD
+config.disable_rtt=true

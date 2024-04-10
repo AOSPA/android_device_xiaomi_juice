@@ -35,60 +35,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.audio.button_jack.profile=volume \
-    persist.vendor.audio.button_jack.switch=0
-
-PRODUCT_VENDOR_PROPERTIES += \
-    aaudio.mmap_policy=2 \
-    ro.vendor.audio.sdk.fluencetype=fluence \
-    vendor.audio.hw.aac.encoder=true \
-    vendor.audio.offload.buffer.size.kb=256
-
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.vendor.audio.soundfx.type=mi \
-    ro.vendor.audio.soundfx.usb=true
-
-PRODUCT_VENDOR_PROPERTIES += \
-     ro.vendor.audio.soundtrigger=sva \
-     ro.vendor.audio.soundtrigger.lowpower=true \
-     ro.vendor.audio.soundtrigger.training.level=50 \
-     ro.vendor.audio.soundtrigger.xanzn.gmm.level=45 \
-     ro.vendor.audio.soundtrigger.xanzn.gmm.user.level=30 \
-     ro.vendor.audio.soundtrigger.xanzn.cnn.level=70 \
-     ro.vendor.audio.soundtrigger.xanzn.vop.level=10 \
-     ro.vendor.audio.soundtrigger.xatx.gmm.level=50 \
-     ro.vendor.audio.soundtrigger.xatx.gmm.user.level=40 \
-     ro.vendor.audio.soundtrigger.xatx.cnn.level=27 \
-     ro.vendor.audio.soundtrigger.xatx.vop.level=10 \
-     ro.vendor.audio.soundtrigger.appdefine.gmm.level=55 \
-     ro.vendor.audio.soundtrigger.appdefine.gmm.user.level=50 \
-     ro.vendor.audio.soundtrigger.appdefine.cnn.level=31 \
-     ro.vendor.audio.soundtrigger.appdefine.vop.level=10
-
-# Bluetooth
-PRODUCT_PRODUCT_PROPERTIES += \
-    bluetooth.hardware.power.idle_cur_ma=36 \
-    bluetooth.hardware.power.operating_voltage_mv=3700 \
-    bluetooth.hardware.power.rx_cur_ma=20 \
-    bluetooth.hardware.power.tx_cur_ma=3 \
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac \
-    persist.bluetooth.a2dp_offload.disabled=false \
-    persist.bluetooth.disableabsvol=true \
-    persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac \
-    persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false \
-    persist.vendor.qcom.bluetooth.enable.splita2dp=true \
-    persist.vendor.qcom.bluetooth.scram.enabled=false \
-    persist.vendor.qcom.bluetooth.soc=cherokee \
-    persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
-    persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac \
-    persist.vendor.bt.aac_frm_ctl.enabled=true \
-    persist.vendor.btstack.enable.lpa=true \
-    ro.bluetooth.a2dp_offload.supported=true \
-    ro.vendor.bluetooth.wipower=false
-
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
@@ -98,14 +44,6 @@ PRODUCT_PACKAGES += \
     libstdc++_vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
-
-PRODUCT_SYSTEM_PROPERTIES += \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera \
-    vendor.camera.aux.packagelist.ext=org.codeaurora.snapcam,com.android.camera \
-    persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera
-
-PRODUCT_VENDOR_PROPERTIES += \
-    camera.disable_zsl_mode=1
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -117,10 +55,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libsuspend
 
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.vendor.quick.charge=1 \
-    ro.charger.disable_init_blank=true
-
 # Consumer IR
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
@@ -128,18 +62,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
-
-# Cutout
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.support_hide_display_cutout=true
-
-# Crypto
-PRODUCT_PROPERTY_OVERRIDES += \
-   ro.crypto.allow_encrypt_override=true \
-   ro.crypto.dm_default_key.options_format.version=2 \
-   ro.crypto.volume.filenames_mode=aes-256-cts \
-   ro.crypto.volume.metadata.method=dm-default-key \
-   ro.crypto.volume.options=::v2
 
 # capabilityconfigstore
 PRODUCT_PACKAGES += \
@@ -149,27 +71,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
-PRODUCT_VENDOR_PROPERTIES += \
-    vendor.display.disable_layer_stitch=1 \
-    vendor.display.enable_rounded_corner=0
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.disable_backpressure=1 \
-    vendor.display.enable_async_powermode=0 \
-    ro.hwui.render_ahead=20
-
-# DPM
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.dpm.feature=1 \
-    persist.vendor.dpmhalservice.enable=1
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
     android.hardware.drm-service.clearkey
-
-PRODUCT_VENDOR_PROPERTIES += \
-    drm.service.enabled=true
 
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
@@ -187,39 +92,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.hardware.fp.sideCap=true
-
 # FM
 BOARD_HAVE_QCOM_FM := true
 
-# FRP
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.frp.pst=/dev/block/bootdevice/by-name/frp
-
-# FUSE passthrough
-PRODUCT_SYSTEM_PROPERTIES += \
-    persist.sys.fuse.passthrough.enable=true
-
 # Health
 TARGET_USE_HIDL_QTI_HEALTH := true
-
-# HWUI
-PRODUCT_VENDOR_PROPERTIES += \
-    debug.hwui.use_hint_manager=true \
-    debug.hwui.target_cpu_time_percent=30
 
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
 TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
-
-# LMK
-PRODUCT_SYSTEM_PROPERTIES += \
-    ro.lmk.filecache_min_kb=153600  \
-    ro.lmk.kill_timeout_ms=50 \
-    ro.lmk.stall_limit_critical=40
 
 # GSI
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
@@ -232,11 +115,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version-1_1.xml \
     frameworks/native/data/etc/android.software.opengles.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
-
-PRODUCT_VENDOR_PROPERTIES += \
-   ro.hardware.egl=adreno \
-   ro.hardware.vulkan=adreno \
-   ro.opengles.version=196610
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -251,35 +129,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/input/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/configs/input/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
 
-# Media
-PRODUCT_VENDOR_PROPERTIES += \
-    media.settings.xml=/vendor/etc/media_profiles_vendor.xml \
-    vendor.mm.enable.qcom_parser=16777215
-
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    media.aac_51_output_enabled=true \
-    media.stagefright.enable-aac=true \
-    media.stagefright.enable-fma2dp=true \
-    media.stagefright.enable-http=true \
-    media.stagefright.enable-player=true \
-    media.stagefright.enable-qcp=true \
-    media.stagefright.enable-scan=true \
-    mmp.enable.3g2=true \
-    persist.mm.enable.prefetch=true
-
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0.vendor
-
-# Netflix
-PRODUCT_SYSTEM_PROPERTIES += \
-    ro.netflix.channel=497730f0-ad4b-11e7-95a4-c7ad113ce187 \
-    ro.netflix.signup=1 \
-    ro.netflix.bsp_rev=Q6115-31409-1
-
-# Netmgr
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    persist.data.netmgrd.qos.enable=true
 
 # Neural Networks
 PRODUCT_PACKAGES += \
@@ -306,9 +158,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_lemon/android.hardware.se.omapi.ese.xml \
     frameworks/native/data/etc/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_lemon/android.hardware.se.omapi.uicc.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_lemon/com.android.nfc_extras.xml
-
-PRODUCT_SYSTEM_PROPERTIES += \
-    ro.nfc.port=I2C
 
 # Overlays
 PRODUCT_PACKAGES += \
@@ -343,10 +192,6 @@ PRODUCT_COPY_FILES += \
 # Public libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
-
-# Phantom process monitoring
-PRODUCT_PRODUCT_PROPERTIES += \
-    sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
 # Rootdir / Init files
 PRODUCT_COPY_FILES += \
@@ -390,35 +235,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     wfd \
     wlan
 
-# Radio
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    ro.telephony.block_binder_thread_on_incoming_calls=false
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.radio.fetchqos=true
-
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.data.iwlan.enable=true \
-    persist.vendor.radio.add_power_save=1 \
-    persist.vendor.radio.atfwd.start=true \
-    persist.vendor.radio.data_con_rprt=1 \
-    persist.vendor.radio.enable_temp_dds=true \
-    persist.vendor.radio.force_on_dc=true \
-    persist.vendor.radio.manual_nw_rej_ct=1 \
-    persist.vendor.radio.mt_sms_ack=30 \
-    persist.vendor.radio.process_sups_ind=1 \
-    persist.vendor.radio.report_codec=1 \
-    persist.vendor.radio.snapshot_enabled=1 \
-    persist.vendor.radio.snapshot_timer=5 \
-    rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so \
-    ro.vendor.radio.features_common=3 \
-    ro.vendor.se.type=HCE,UICC \
-    sys.vendor.shutdown.waittime=500
-
-# Recovery
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.flash.recovery=0
-
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal \
@@ -436,40 +252,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.sensors.hal_trigger_ssr=false \
-    persist.vendor.sensors.odl.adsp=true \
-    persist.vendor.sensors.enable.rt_task=false \
-    persist.vendor.sensors.support_direct_channel=false \
-    persist.vendor.sensors.enable.bypass_worker=true
-
-# SoC
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.soc.manufacturer=Qualcomm \
-    ro.soc.model=SM6115
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
-# Snapdragon Vision
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.display.svi=1 \
-    ro.vendor.display.sensortype=2 \
-    vendor.display.svi.config=1 \
-    vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
-
-# Subsystem silent restart
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.ssr.restart_level=ALL_ENABLE
-
-# Thermal
-PRODUCT_VENDOR_PROPERTIES += \
-    vendor.sys.thermal.data.path=/data/vendor/thermal/
-
-# Time-services
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.timed.enable=true
 
 # USB
 PRODUCT_COPY_FILES += \
@@ -498,22 +283,6 @@ $(call inherit-product, vendor/xiaomi/juice/juice-vendor.mk)
 PRODUCT_PACKAGES += \
     libwfdaac_vendor:32
 
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    config.disable_rtt=true
-
 # WLAN
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wlan/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
-
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.data.iwlan.enable=true \
-    ro.hardware.wlan.chip=wcn3988 \
-    ro.hardware.wlan.dbs=0 \
-    ro.hardware.wlan.mimo=0 \
-    ro.hardware.wlan.vendor=qcom \
-    ro.telephony.iwlan_operation_mode=legacy
-
-# Zygote
-PRODUCT_SYSTEM_PROPERTIES += \
-    zygote.critical_window.minute=10 \
-    persist.device_config.runtime_native.usap_pool_enabled=true
