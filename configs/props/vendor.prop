@@ -1,0 +1,139 @@
+# Audio
+aaudio.mmap_policy=2
+ro.vendor.audio.sdk.fluencetype=fluence
+vendor.audio.hw.aac.encoder=true
+vendor.audio.offload.buffer.size.kb=256
+persist.vendor.audio.button_jack.profile=volume
+persist.vendor.audio.button_jack.switch=0
+ro.vendor.audio.soundfx.type=mi
+ro.vendor.audio.soundfx.usb=true
+ro.vendor.audio.soundtrigger=sva
+ro.vendor.audio.soundtrigger.lowpower=true
+ro.vendor.audio.soundtrigger.training.level=50
+ro.vendor.audio.soundtrigger.xanzn.gmm.level=45
+ro.vendor.audio.soundtrigger.xanzn.gmm.user.level=30
+ro.vendor.audio.soundtrigger.xanzn.cnn.level=70
+ro.vendor.audio.soundtrigger.xanzn.vop.level=10
+ro.vendor.audio.soundtrigger.xatx.gmm.level=50
+ro.vendor.audio.soundtrigger.xatx.gmm.user.level=40
+ro.vendor.audio.soundtrigger.xatx.cnn.level=27
+ro.vendor.audio.soundtrigger.xatx.vop.level=10
+ro.vendor.audio.soundtrigger.appdefine.gmm.level=55
+ro.vendor.audio.soundtrigger.appdefine.gmm.user.level=50
+ro.vendor.audio.soundtrigger.appdefine.cnn.level=31
+ro.vendor.audio.soundtrigger.appdefine.vop.level=10
+
+# Bluetooth
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
+persist.bluetooth.a2dp_offload.disabled=false
+persist.bluetooth.disableabsvol=true
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false
+persist.vendor.qcom.bluetooth.enable.splita2dp=true
+persist.vendor.qcom.bluetooth.scram.enabled=false
+persist.vendor.qcom.bluetooth.soc=cherokee
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+persist.vendor.bt.aac_frm_ctl.enabled=true
+persist.vendor.btstack.enable.lpa=true
+ro.bluetooth.a2dp_offload.supported=true
+ro.vendor.bluetooth.wipower=false
+
+# Camera
+camera.disable_zsl_mode=1
+
+# Crypto
+ro.crypto.allow_encrypt_override=true
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.filenames_mode=aes-256-cts
+ro.crypto.volume.metadata.method=dm-default-key
+ro.crypto.volume.options=::v2
+
+# Display
+debug.sf.disable_backpressure=1
+ro.hwui.render_ahead=20
+vendor.display.enable_async_powermode=0
+vendor.display.disable_layer_stitch=1
+vendor.display.enable_rounded_corner=0
+
+# DPM
+persist.dpm.feature=1
+persist.vendor.dpmhalservice.enable=1
+
+# DRM
+drm.service.enabled=true
+
+# Fingerprint
+ro.hardware.fp.sideCap=true
+
+# FRP
+ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# HWUI
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
+
+# Graphics
+ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno
+ro.opengles.version=196610
+
+# Media
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+vendor.mm.enable.qcom_parser=16777215
+
+# Recovery
+persist.vendor.flash.recovery=0
+
+# Radio
+persist.vendor.radio.fetchqos=true
+persist.vendor.data.iwlan.enable=true
+persist.vendor.radio.add_power_save=1
+persist.vendor.radio.atfwd.start=true
+persist.vendor.radio.data_con_rprt=1
+persist.vendor.radio.enable_temp_dds=true
+persist.vendor.radio.force_on_dc=true
+persist.vendor.radio.manual_nw_rej_ct=1
+persist.vendor.radio.mt_sms_ack=30
+persist.vendor.radio.process_sups_ind=1
+persist.vendor.radio.report_codec=1
+persist.vendor.radio.snapshot_enabled=1
+persist.vendor.radio.snapshot_timer=5
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
+ro.vendor.radio.features_common=3
+ro.vendor.se.type=HCE,UICC
+sys.vendor.shutdown.waittime=500
+
+# Sensors
+persist.vendor.sensors.hal_trigger_ssr=false
+persist.vendor.sensors.odl.adsp=true
+persist.vendor.sensors.enable.rt_task=false
+persist.vendor.sensors.support_direct_channel=false
+persist.vendor.sensors.enable.bypass_worker=true
+
+# SoC
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SM6115
+
+# Snapdragon Vision
+ro.vendor.display.svi=1
+ro.vendor.display.sensortype=2
+vendor.display.svi.config=1
+vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
+
+# Subsystem silent restart
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
+# Thermal
+vendor.sys.thermal.data.path=/data/vendor/thermal/
+
+# Time-services
+persist.timed.enable=true
+
+# WLAN
+persist.vendor.data.iwlan.enable=true
+ro.hardware.wlan.chip=wcn3988
+ro.hardware.wlan.dbs=0
+ro.hardware.wlan.mimo=0
+ro.hardware.wlan.vendor=qcom
+ro.telephony.iwlan_operation_mode=legacy
