@@ -73,11 +73,6 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
 
-# Graphics
-ro.hardware.egl=adreno
-ro.hardware.vulkan=adreno
-ro.opengles.version=196610
-
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 vendor.mm.enable.qcom_parser=16777215
