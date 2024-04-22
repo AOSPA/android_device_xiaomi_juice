@@ -25,7 +25,7 @@
 /dev/focaltech_fp                                                       u:object_r:fingerprint_device:s0
 
 # Fingerprint - data
-/data/gf_data(/.*)?                                                     u:object_r:fingerprint_data_file:s0
+/data/gf_data(/.*)?                                                     u:object_r:goodix_fingerprint_data_file:s0
 /data/vendor/focaltech(/.*)?                                            u:object_r:fingerprint_data_file:s0
 /data/vendor/goodix(/.*)?                                               u:object_r:fingerprint_data_file:s0
 /data/vendor/fpc(/.*)?                                                  u:object_r:fingerprint_data_file:s0
