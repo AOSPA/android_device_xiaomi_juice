@@ -9,6 +9,7 @@ allow init sysfs_touchpanel:file { setattr };
 
 allow init adsprpcd_file:file mounton;
 allow init device:chr_file ioctl;
+allow init hal_fingerprint_default:process ptrace;
 allow init hwservicemanager:binder { call transfer };
 allow init hwservicemanager:binder { transfer };
 allow init nfc:binder { call };
