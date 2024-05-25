@@ -321,7 +321,7 @@ vendor/lib64/camera/components/com.qti.node.eisv3.so|d735ac20203886bf32fb962e404
 vendor/lib64/camera/components/com.qti.node.fcv.so|27c7f10ebca7656261c5134717485f2d09a70ea8
 vendor/lib64/camera/components/com.qti.node.gpu.so|cd784a74d4bc97ec2c74dd7621efc8347a4509bb
 vendor/lib64/camera/components/com.qti.node.memcpy.so|248765814098b7a9581ea8607ae55db0bff398e7
-vendor/lib64/camera/components/com.qti.node.mialgocontrol.so|3c9bd7f764fffb53ad8216ffd9948ca8158e2e42
+vendor/lib64/camera/components/com.qti.node.mialgocontrol.so|18a5150d86a8b40e2f00e7d5730997511296b756
 vendor/lib64/camera/components/com.qti.node.realtimebokeh.so|a60a798354c7e4fb49bcbedc9762183e8ea33628
 vendor/lib64/camera/components/com.qti.node.remosaic.so|c4e6dddd245b67528de1c5b947309a81fd894026
 vendor/lib64/camera/components/com.qti.node.stich.so|c4bb696e6575eaaaa22862cffabdd650e1662ef5
@@ -589,7 +589,7 @@ vendor/etc/init/qseecomd.rc|3b5979e9e89a9bad26b2c502e4ba226f1e92360c
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc|0f43244d70d5efc1e4f089b926a9dc4f59e53db1
 vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|4fc59887982b517f500d3d59190bdec0abec9b00
 vendor/lib64/mediadrm/libdrmclearkeyplugin.so|a9e37d481b963ecf5bed227ab4e9b82c44b868a4
-vendor/lib64/libGPQTEEC_vendor.so|d70f659c06a38dbae028f41ca6e0dece0ef1d5cd
+vendor/lib64/libGPQTEEC_vendor.so|f8dcd605622b1b8e71192b01f35b0e84070d4c75
 vendor/lib64/libGPTEE_vendor.so|92c0215dbd3271e597d536c259df44aac716a402
 vendor/lib64/libGPreqcancel.so|cef7983d5aceb03b4c422731c838ead1a8f3fed4
 vendor/lib64/libGPreqcancel_svc.so|c48115db146ea5b8a2bc40cec44a4c6feac00e30
@@ -651,7 +651,7 @@ vendor/lib64/libgf_ca.so|f7931448f86486c68ea94a6c4f911f1c21a91d50
 vendor/lib64/libgf_hal.so|2d86eb30d0305f15a049ad81955e761cd1d6c066
 vendor/lib64/libgoodixhwfingerprint.so|c0e77a2ef33cd9f9d0febb05e8155f80f9d83e60
 vendor/lib64/libsl_fp_impl.so|2788f93c8b13b2ad105d4873c94c2d7a9d39eb7d
-vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so|98a8689e5aaad8e021fa066889dee24dd14f24ec
+vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so|854987ebb6e813442ce7a85ee22dd25ddbea029b
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|47afe5427f5673e39f4642999df2857fbd1bac04
 vendor/lib64/vendor.silead.hardware.fingerprintext@1.0.so|e543a0ba3b76371d88afb9670721fe203ccf788d
 
