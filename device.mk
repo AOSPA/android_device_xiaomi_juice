@@ -39,17 +39,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.button_jack.profile=volume \
     persist.vendor.audio.button_jack.switch=0
 
-PRODUCT_ODM_PROPERTIES += \
-    aaudio.mmap_policy=1 \
+PRODUCT_VENDOR_PROPERTIES += \
+    aaudio.mmap_policy=2 \
     ro.vendor.audio.sdk.fluencetype=fluence \
-    vendor.audio.hw.aac.encoder=false \
+    vendor.audio.hw.aac.encoder=true \
     vendor.audio.offload.buffer.size.kb=256
 
 PRODUCT_VENDOR_PROPERTIES += \
-    ro.vendor.audio.scenario.support=true \
     ro.vendor.audio.soundfx.type=mi \
-    ro.vendor.audio.soundfx.usb=true \
-    ro.vendor.audio.us.proximity=true
+    ro.vendor.audio.soundfx.usb=true
 
 PRODUCT_VENDOR_PROPERTIES += \
      ro.vendor.audio.soundtrigger=sva \
@@ -157,10 +155,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.disable_backpressure=1 \
-    debug.sf.enable_gl_backpressure=1 \
-    debug.sf.disable_client_composition_cache=1 \
     vendor.display.enable_async_powermode=0 \
-    debug.renderengine.backend=skiaglthreaded \
     ro.hwui.render_ahead=20
 
 # DPM
