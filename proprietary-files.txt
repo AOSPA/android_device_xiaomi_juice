@@ -3,16 +3,6 @@
 # LA.VENDOR.1.0.r1-15600-WAIPIO blobs from taro
 # qssi-user-11-RKQ1.201004.002-V12.5.7.0.RJFMIXM-release-keys blobs from citrus
 
-# ACDB - from LA.VENDOR.1.0.r1-15600-WAIPIO
-vendor/etc/acdbdata/bengal_idp/IDP_acdb_cal.acdb|fab9d9cbea770f295a1008cb1366d432eec62c81
-vendor/etc/acdbdata/bengal_idp/IDP_workspaceFileXml.qwsp|5f56c0cb5d27755e5db26f9ffcc5756e10753460
-vendor/etc/acdbdata/bengal_qrd/QRD_acdb_cal.acdb|278f923deace47b1fc766e9e1a5a527fe0422dc6
-vendor/etc/acdbdata/bengal_qrd/QRD_workspaceFileXml.qwsp|82216a3aaf9efdb42114d1b37ce7f9b33759f453
-vendor/etc/acdbdata/bengal_scubaidp/IDP_scuba_acdb_cal.acdb|fab9d9cbea770f295a1008cb1366d432eec62c81
-vendor/etc/acdbdata/bengal_scubaidp/IDP_scuba_workspaceFileXml.qwsp|5f56c0cb5d27755e5db26f9ffcc5756e10753460
-vendor/etc/acdbdata/bengal_scubaqrd/QRD_scuba_acdb_cal.acdb|278f923deace47b1fc766e9e1a5a527fe0422dc6
-vendor/etc/acdbdata/bengal_scubaqrd/QRD_scuba_workspaceFileXml.qwsp|82216a3aaf9efdb42114d1b37ce7f9b33759f453
-
 # ACDB - from MIUI
 vendor/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Bluetooth_cal.acdb|0cc92d7ce081e30ccaa203b3591f592d7ca36a6d
 vendor/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_General_cal.acdb|bc72b6775db86bb57a74a2e8d70af50174ecc093
@@ -783,7 +773,7 @@ vendor/firmware/scuba_ipa_fws.elf|cc680f8ffa5fb5f6de87e490b0a7270cae7cff3d
 vendor/firmware/scuba_ipa_fws.mdt|74693016d7013874005a75305eb6de0eaad44df6
 
 # Listen - from MIUI
-vendor/lib/hw/sound_trigger.primary.bengal.so
+vendor/lib/hw/sound_trigger.primary.bengal.so|d7532a84cd824bc65a0ae4c214ee590decb4151e
 vendor/lib/libadpcmdec.so|491fedbdcf9a395340ce4142c277156c0056bcf8
 vendor/lib/libcapiv2svacnn.so|da98f2be1e8bd1aba364610063e70c34cab844d2
 vendor/lib/libcapiv2vop.so|b47caa2eeec81e98de03439548d9b9199222eda7
