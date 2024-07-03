@@ -16,6 +16,24 @@
       "message": "disable in dtsi",
       "revId": "ac308741a9af97f821d216522520496aa91f3301",
       "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7437374e_3029b5e8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000579
+      },
+      "writtenOn": "2024-07-03T08:48:34Z",
+      "side": 1,
+      "message": "qcom did it in devicetree so i\u0027ll allow it",
+      "parentUuid": "5b2915bb_5743907a",
+      "revId": "ac308741a9af97f821d216522520496aa91f3301",
+      "serverId": "3162e3d8-d894-470e-abd9-724f7b0effad"
     }
   ]
 }
